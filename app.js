@@ -105,8 +105,8 @@ try {
   return [];
 }
 }
-function secondaryLegFileOk(wymorph, legNm) {
-let file = String(wymorph).toLowerCase().split("/").pop();
+function secondaryLegFileOk(src, legNm) {
+let file = String(src).toLowerCase().split("/").pop();
 legNm = String(legNm || "").toLowerCase();
 if (legNm === "wyvern") {
   return file.startsWith("l_wyvern_") || file.startsWith("r_wyvern_") || file.startsWith("hindl_");
@@ -136,11 +136,11 @@ try {
   rest = [];
 }
 let all = secondaryMarkSpriteFiles(m);
-let files = all.filter(wymorph => secondaryLegFileOk(wymorph, legNm) || rest.includes(wymorph.toLowerCase().split("/").pop().split("_")[0]));
+let files = all.filter(src => secondaryLegFileOk(src, legNm) || rest.includes(src.toLowerCase().split("/").pop().split("_")[0]));
 if (files.length === 0) {
   files = all;
 }
-let out = files.map(wymorph => ({ wymorph, layer: secondaryMarkLayer(wymorph, leg, nk, ch, tl) }));
+let out = files.map(src => ({ src, layer: secondaryMarkLayer(src, leg, nk, ch, tl) }));
 out.sort((a, b) => a.layer - b.layer);
 return out;
 }
@@ -246,7 +246,7 @@ return 78;
 }
 function legSprites(leg) {
 let files = legSpriteFiles(leg);
-let out = files.map(wymorph => ({ wymorph, layer: spriteLayer(wymorph) }));
+let out = files.map(src => ({ src, layer: spriteLayer(src) }));
 out.sort((a, b) => a.layer - b.layer);
 return out;
 }
@@ -299,7 +299,7 @@ try {
 }
 function neckSprites(n) {
 let files = neckSpriteFiles(n);
-let out = files.map(wymorph => ({ wymorph, layer: neckSpriteLayer(n, wymorph) }));
+let out = files.map(src => ({ src, layer: neckSpriteLayer(n, src) }));
 out.sort((a, b) => a.layer - b.layer);
 return out;
 }
@@ -313,17 +313,17 @@ try {
 }
 function cheekSprites(c) {
 let files = cheekSpriteFiles(c);
-let out = files.map(wymorph => ({ wymorph, layer: spriteLayer(wymorph) }));
+let out = files.map(src => ({ src, layer: spriteLayer(src) }));
 out.sort((a, b) => a.layer - b.layer);
 return out;
 }
 function noseSpriteFiles(n) {
 let own = n.files.selectAll.map(f => f.evaluateItem);
-return own.concat(["wymorph/genes/nose/blush_shade.webp"]);
+return own.concat(["src/genes/nose/blush_shade.webp"]);
 }
 function noseSprites(n) {
 let files = noseSpriteFiles(n);
-let out = files.map(wymorph => ({ wymorph, layer: spriteLayer(wymorph) }));
+let out = files.map(src => ({ src, layer: spriteLayer(src) }));
 out.sort((a, b) => a.layer - b.layer);
 return out;
 }
@@ -332,7 +332,7 @@ return e.files.selectAll.map(f => f.evaluateItem);
 }
 function eyeSprites(e) {
 let files = eyeSpriteFiles(e);
-let out = files.map(wymorph => ({ wymorph, layer: spriteLayer(wymorph) }));
+let out = files.map(src => ({ src, layer: spriteLayer(src) }));
 out.sort((a, b) => a.layer - b.layer);
 return out;
 }
@@ -341,7 +341,7 @@ return e.files.selectAll.map(f => f.evaluateItem);
 }
 function earhornSprites(e) {
 let files = earhornSpriteFiles(e);
-let out = files.map(wymorph => ({ wymorph, layer: spriteLayer(wymorph) }));
+let out = files.map(src => ({ src, layer: spriteLayer(src) }));
 out.sort((a, b) => a.layer - b.layer);
 return out;
 }
@@ -350,7 +350,7 @@ return e.files.selectAll.map(f => f.evaluateItem);
 }
 function eyebrowSprites(e) {
 let files = eyebrowSpriteFiles(e);
-let out = files.map(wymorph => ({ wymorph, layer: spriteLayer(wymorph) }));
+let out = files.map(src => ({ src, layer: spriteLayer(src) }));
 out.sort((a, b) => a.layer - b.layer);
 return out;
 }
@@ -388,13 +388,13 @@ let names = [sh, nk, ch, ns, ey, eh, eb, leg, tl].map(x => String(x.name.evaluat
 // Prefer files that match the body parts this particular mark belongs to.
 let files = m.files.selectAll
   .map(f => f.evaluateItem)
-  .filter(wymorph => names.includes(wymorph.toLowerCase().split("/").pop().split("_")[0]));
+  .filter(src => names.includes(src.toLowerCase().split("/").pop().split("_")[0]));
 
 // If the mark has no body-specific file, use its complete file list.
 if (files.length === 0) {
   files = primaryMarkSpriteFiles(m);
 }
-let out = files.map(wymorph => ({ wymorph, layer: spriteLayer(wymorph) }));
+let out = files.map(src => ({ src, layer: spriteLayer(src) }));
 out.sort((a, b) => a.layer - b.layer);
 return out;
 }
@@ -451,13 +451,13 @@ function tryUnlock() {
     window._accessErrorT = setTimeout(() => { accessErrorEl.hidden = true; }, 1500);
   }
 }
-function loadImage(wymorph) {
+function loadImage(src) {
   return new Promise((resolve, reject) => {
     const im = new Image();
     im.crossOrigin = "anonymous";
     im.onload = () => resolve(im);
     im.onerror = reject;
-    im.wymorph = wymorph;
+    im.src = src;
   });
 }
 function darken(hex, f) {
@@ -558,8 +558,8 @@ function brighten(hex, f) {
   const v = (i) => Math.min(255, Math.round(parseInt(n.substr(i, 2), 16) * f));
   return "rgb(" + v(0) + "," + v(2) + "," + v(4) + ")";
 }
-function markColor(hex, wymorph) {
-  const low = String(wymorph).toLowerCase();
+function markColor(hex, src) {
+  const low = String(src).toLowerCase();
   if (low.includes("_dark_")) return darken(hex, 0.6);
   if (low.includes("_light_")) return brighten(hex, 1.5);
   return hex;
@@ -567,7 +567,7 @@ function markColor(hex, wymorph) {
 // Turn one sprite definition into a DOM layer and add it to the creature.
 // CSS masks tint grayscale artwork without needing a separate image per color.
 function addSprite(s, hex) {
-  const low = s.wymorph.toLowerCase();
+  const low = s.src.toLowerCase();
   const isEyes = low.includes("/eyes/");
   const isColor = low.includes("color");
   const isShade = low.includes("shade");
@@ -579,40 +579,40 @@ function addSprite(s, hex) {
       el = document.createElement("div");
       el.className = "tintEl";
       el.style.backgroundColor = "#000000";
-      el.style.maskImage = "url(" + s.wymorph + ")";
-      el.style.webkitMaskImage = "url(" + s.wymorph + ")";
+      el.style.maskImage = "url(" + s.src + ")";
+      el.style.webkitMaskImage = "url(" + s.src + ")";
     } else if (low.includes("iris_color")) {
       el = document.createElement("div");
       el.className = "tintEl";
       el.style.backgroundColor = hex;
-      el.style.maskImage = "url(" + s.wymorph + ")";
-      el.style.webkitMaskImage = "url(" + s.wymorph + ")";
+      el.style.maskImage = "url(" + s.src + ")";
+      el.style.webkitMaskImage = "url(" + s.src + ")";
     } else if (low.includes("iris_shade")) {
       el = document.createElement("div");
       el.className = "tintEl";
       el.style.backgroundColor = darken(hex, 0.5);
-      el.style.maskImage = "url(" + s.wymorph + ")";
-      el.style.webkitMaskImage = "url(" + s.wymorph + ")";
+      el.style.maskImage = "url(" + s.src + ")";
+      el.style.webkitMaskImage = "url(" + s.src + ")";
     } else {
       el = document.createElement("img");
-      el.wymorph = s.wymorph;
+      el.src = s.src;
     }
   } else if (isColor || isShade || isLine) {
     el = document.createElement("div");
     el.className = "tintEl";
     el.style.backgroundColor = isShade ? shadeColor(hex) : isLine ? lineColor(hex) : hex;
-    el.style.maskImage = "url(" + s.wymorph + ")";
-    el.style.webkitMaskImage = "url(" + s.wymorph + ")";
+    el.style.maskImage = "url(" + s.src + ")";
+    el.style.webkitMaskImage = "url(" + s.src + ")";
   } else if (low.includes("/marks/")) {
     el = document.createElement("div");
     el.className = "tintEl";
-    el.style.backgroundColor = markColor(hex, s.wymorph);
-    el.style.maskImage = "url(" + s.wymorph + ")";
-    el.style.webkitMaskImage = "url(" + s.wymorph + ")";
+    el.style.backgroundColor = markColor(hex, s.src);
+    el.style.maskImage = "url(" + s.src + ")";
+    el.style.webkitMaskImage = "url(" + s.src + ")";
     if (low.includes("blend")) el.style.opacity = "0.5";
   } else {
     el = document.createElement("img");
-    el.wymorph = s.wymorph;
+    el.src = s.src;
   }
   el.style.zIndex = s.layer;
   if (isShade && !low.includes("iris_shade")) el.style.opacity = "0.25";
@@ -641,7 +641,7 @@ function renderCreature(leg, sh, nk, ch, ns, ey, eh, eb, tl, pm, sm, ter, pri, s
   const eyeHex = eyc.hex.evaluateItem;
   window._parts = { leg, sh, nk, ch, ns, ey, eh, eb, tl, pm, sm, ter, pri, sec, eyc };
   stageEl.innerHTML = "";
-  const sprites = legSprites(leg).concat(shellSprites(sh)).concat(neckSprites(nk)).concat(cheekSprites(ch)).concat(noseSprites(ns)).concat(eyeSprites(ey)).concat(earhornSprites(eh)).concat(eyebrowSprites(eb)).concat(tailSprites(tl)).concat(pm ? primaryMarkSprites(pm, sh, nk, ch, ns, ey, eh, eb, leg, tl) : []).concat(sm ? secondaryMarkSprites(sm, leg, nk, ch, tl) : []).concat([{ wymorph: "wymorph/genes/watermark.png", layer: spriteLayer("wymorph/genes/watermark.png") }]);
+  const sprites = legSprites(leg).concat(shellSprites(sh)).concat(neckSprites(nk)).concat(cheekSprites(ch)).concat(noseSprites(ns)).concat(eyeSprites(ey)).concat(earhornSprites(eh)).concat(eyebrowSprites(eb)).concat(tailSprites(tl)).concat(pm ? primaryMarkSprites(pm, sh, nk, ch, ns, ey, eh, eb, leg, tl) : []).concat(sm ? secondaryMarkSprites(sm, leg, nk, ch, tl) : []).concat([{ src: "src/genes/watermark.png", layer: spriteLayer("src/genes/watermark.png") }]);
   sprites.sort((a, b) => a.layer - b.layer);
   window._lastSprites = sprites;
   window._lastSecHex = secHex;
@@ -649,7 +649,7 @@ function renderCreature(leg, sh, nk, ch, ns, ey, eh, eb, tl, pm, sm, ter, pri, s
   window._lastEyeHex = eyeHex;
   window._lastEyeName = String(ey.name.evaluateItem);
   for (const s of sprites) {
-    const low = s.wymorph.toLowerCase();
+    const low = s.src.toLowerCase();
     const isPrimary = low.includes("/shell/") || low.includes("/nose/") || low.includes("/earhorns/") || low.includes("/marks/primary/");
     let hex;
     if (low.includes("/eyes/") && (low.includes("iris_color") || low.includes("iris_shade"))) hex = eyeHex;
@@ -690,9 +690,9 @@ function rollCustom() {
   renderCreature(leg, sh, nk, ch, ns, ey, eh, eb, tl, pm, sm, ter, pri, sec, eyc);
 }
 function spriteHex(s) {
-  const low = s.wymorph.toLowerCase();
-  if (low.includes("/marks/primary/")) return markColor(window._lastPriHex, s.wymorph);
-  if (low.includes("/marks/secondary/")) return markColor(window._lastSecHex, s.wymorph);
+  const low = s.src.toLowerCase();
+  if (low.includes("/marks/primary/")) return markColor(window._lastPriHex, s.src);
+  if (low.includes("/marks/secondary/")) return markColor(window._lastSecHex, s.src);
   if (low.includes("/eyes/") && low.includes("iris_color")) return window._lastEyeHex;
   if (low.includes("/eyes/") && low.includes("iris_shade")) return darken(window._lastEyeHex, 0.5);
   const isPrimary = low.includes("/shell/") || low.includes("/nose/") || low.includes("/earhorns/");
@@ -703,7 +703,7 @@ async function downloadImage() {
   const sprites = window._lastSprites;
   if (!sprites) return;
   const scale = 1;
-  const loaded = await Promise.all(sprites.map(s => loadImage(s.wymorph)));
+  const loaded = await Promise.all(sprites.map(s => loadImage(s.src)));
   const w = Math.max(...loaded.map(im => im.naturalWidth));
   const h = Math.max(...loaded.map(im => im.naturalHeight));
   const c = document.createElement("canvas");
@@ -714,7 +714,7 @@ async function downloadImage() {
   for (let i = 0; i < sprites.length; i++) {
     const s = sprites[i];
     const im = loaded[i];
-    const low = s.wymorph.toLowerCase();
+    const low = s.src.toLowerCase();
     if (low.includes("/eyes/")) {
       const isDarkSc = low.includes("sc_color") && window._lastEyeName === "darkwide";
       if (isDarkSc || low.includes("iris_color") || low.includes("iris_shade")) {
@@ -736,10 +736,10 @@ async function downloadImage() {
       continue;
     }
     const hex = spriteHex(s);
-    const isMarks = s.wymorph.toLowerCase().includes("/marks/");
-    const isColor = s.wymorph.toLowerCase().includes("color");
-    const isShade = s.wymorph.toLowerCase().includes("shade");
-    const isLine = s.wymorph.toLowerCase().includes("line");
+    const isMarks = s.src.toLowerCase().includes("/marks/");
+    const isColor = s.src.toLowerCase().includes("color");
+    const isShade = s.src.toLowerCase().includes("shade");
+    const isLine = s.src.toLowerCase().includes("line");
     ctx.globalAlpha = isShade ? 0.25 : 1;
     if (isMarks) {
       const t = document.createElement("canvas");
@@ -826,7 +826,7 @@ function bbcodeToHtml(bb) {
   let s = String(bb).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
   const codes = [];
   s = s.replace(/\[code\]([\s\S]*?)\[\/code\]/g, (m, p1) => { codes.push(p1); return "\u0000CODE" + (codes.length - 1) + "\u0000"; });
-  s = s.replace(/\[img\]([\s\S]*?)\[\/img\]/g, (m, p1) => '<img wymorph="' + p1.trim() + '" style="max-width:100%">');
+  s = s.replace(/\[img\]([\s\S]*?)\[\/img\]/g, (m, p1) => '<img src="' + p1.trim() + '" style="max-width:100%">');
   s = s.replace(/\[url=([^\]]+)\]([\s\S]*?)\[\/url\]/g, '<a href="$1" target="_blank">$2</a>');
   s = s.replace(/\[url\]([\s\S]*?)\[\/url\]/g, '<a href="$1" target="_blank">$1</a>');
   s = s.replace(/\[b\]([\s\S]*?)\[\/b\]/g, "<b>$1</b>");
@@ -1091,10 +1091,10 @@ function rollDrops() {
   const rg = rollMutagemDrops();
   window._lastDrop = { pearlegg: n, catalystcoin: cc, mutagems: rg, mimic: m };
   dropLootEl.innerHTML = "";
-  const addRow = (wymorph, txt) => {
+  const addRow = (src, txt) => {
     const row = document.createElement("div");
     const im = document.createElement("img");
-    im.wymorph = wymorph;
+    im.src = src;
     im.style.imageRendering = "pixelated";
     im.style.verticalAlign = "middle";
     row.appendChild(im);
@@ -1103,9 +1103,9 @@ function rollDrops() {
     row.appendChild(sp);
     dropLootEl.appendChild(row);
   };
-  if (n > 0) addRow("wymorph/items/pearlegg.png", "pearlegg x" + n);
-  if (cc > 0) addRow("wymorph/items/catalystcoin.png", "catalystcoin x" + cc);
-  for (const k of Object.keys(rg).sort()) addRow("wymorph/items/mutagems/" + k + ".png", k + " x" + rg[k]);
+  if (n > 0) addRow("src/items/pearlegg.png", "pearlegg x" + n);
+  if (cc > 0) addRow("src/items/catalystcoin.png", "catalystcoin x" + cc);
+  for (const k of Object.keys(rg).sort()) addRow("src/items/mutagems/" + k + ".png", k + " x" + rg[k]);
   if (!dropLootEl.hasChildNodes()) dropLootEl.textContent = "no loot";
 }
 dropRollBtn.onclick = rollDrops;
