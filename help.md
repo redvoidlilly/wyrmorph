@@ -28,7 +28,7 @@ new Trait({
     rarity: "common",
     files: [
         "src/genes/tail/traitname_color.webp",
-	"src/genes/tail/traitname_shade.webp",
+		"src/genes/tail/traitname_shade.webp",
         "src/genes/tail/traitname_line.webp"
     ]
 })
