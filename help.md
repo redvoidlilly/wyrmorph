@@ -7,8 +7,8 @@
 - `data.js` - **gene/item data**. This is the main file to edit when adding traits, colors, rarities, or sprite files.
 - `app.js` - the generator's behavior: RNG, trait compatibility, sprite layering, morphs, loot, image downloads, saved pet data, and forum-post generation.
 - `vendor/jszip.min.js` - a local copy of JSZip used for exporting/importing saved pet data
-- `src/genes/` - creature gene artwork.
-- `src/items/` - drop/mutagem artwork.
+- `wymorph/genes/` - creature gene artwork.
+- `wymorph/items/` - drop/mutagem artwork.
 
 ### Add a gene
 
@@ -27,9 +27,9 @@ new Trait({
     name: "traitname",
     rarity: "common",
     files: [
-        "src/genes/tail/traitname_color.webp",
-		"src/genes/tail/traitname_shade.webp",
-        "src/genes/tail/traitname_line.webp"
+        "wymorph/genes/tail/traitname_color.webp",
+		"wymorph/genes/tail/traitname_shade.webp",
+        "wymorph/genes/tail/traitname_line.webp"
     ]
 })
 ```
