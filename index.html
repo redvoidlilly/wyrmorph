@@ -1,51 +1,349 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Wyrmorph Generator</title>
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-<button id="downloadPetdataBtn" style="position:fixed;top:8px;right:8px;background:#8B0000;color:#fff;z-index:9999">download petdata</button>
-<button id="importPetdataBtn" style="position:fixed;top:40px;right:8px;background:#8B0000;color:#fff;z-index:9999">import petdata</button>
-<input type="file" id="importPetdataInput" accept=".zip" hidden>
-<div style="text-align:center"><button id="versBtn">mobile version</button></div>
-<div id="tabBarEl"><button id="homeTabBtn">Home</button><button id="dropsTabBtn" disabled> Drops</button><button id="morphsTabBtn" disabled>Morphs</button></div>
-<div id="homeTabEl">
-<div style="margin:32px auto;max-width:320px;text-align:center">access code<br><input id="accessCodeInput" style="margin-top:8px;text-align:center"><br><button id="accessCodeBtn" style="margin-top:8px">Enter</button><div id="accessErrorEl" hidden style="margin-top:8px;background:#E53935;color:#fff;padding:2px 8px;border-radius:4px;font-size:12px">Invalid access code</div></div>
-</div>
-<div id="dropsTabEl" hidden>
-<div style="display:flex;gap:16px;justify-content:center;text-align:left">
-<div>UserID: <input id="dropUseridInput"><br>Username: <input id="dropUsernameInput"></div>
-<div><input type="checkbox" id="dropStandardCheck"> standard: <select id="dropStandardSelect"><option value="iron">iron</option><option value="gold">gold</option><option value="prismatic">prismatic</option></select></div>
-<div><input type="checkbox" id="dropFestivalsCheck"> festivals: <select id="dropFestivalsSelect"><option value="spooky">spooky</option><option value="gifted">gifted</option><option value="lovely">lovely</option><option value="reborn">reborn</option><option value="silly">silly</option></select></div>
-<div><input type="checkbox" id="dropSeasonalCheck"> seasonal: <select id="dropSeasonalSelect"><option value="winter">winter</option><option value="spring">spring</option><option value="summer">summer</option><option value="fall">fall</option></select></div>
-</div>
-<div style="margin-top:8px;display:flex;justify-content:center;text-align:left">
-<div><input type="checkbox" id="dropChancesCheck"> chances:<br><textarea id="dropChancesBox" rows="3" cols="40"></textarea></div>
-</div>
-<div style="margin-top:8px"><button id="dropRollBtn" style="background:#8B5CF6;color:#fff;font-weight:bold">ROLL!!!</button></div>
-<div id="dropLootEl" style="margin-top:8px"></div>
-<div style="margin-top:8px"><button id="dropPostBtn" style="background:#22C55E;color:#fff">lootpost</button></div>
-<div id="dropPostOutEl" hidden><textarea id="dropPostCodeEl" rows="12" cols="80" readonly></textarea><br><button id="copyDropPostBtn">Copy BBCode</button><div id="dropPostPreviewEl" style="border:1px solid #ccc;padding:12px;margin:12px auto;max-width:700px;text-align:center;background:#fff"></div></div>
-</div>
-<div id="morphsTabEl">
-<button id="generateBtn" style="background:#8B5CF6;color:#fff">Random</button>
-<button id="newbornBtn" style="background:#22C55E;color:#fff">Newborn</button>
-<button id="customBtn" style="background:#FACC15">custom</button>
-<button id="morphBtn" style="background:#E53935;color:#fff">Morph</button>
+<style>
+  body { text-align: center; font-family: sans-serif; }
+  #mobileBtn { position: fixed; top: 8px; left: 8px; z-index: 9999; }
+  body.mobile-vers { max-width: 340px; margin: 0 auto; padding: 48px 12px 24px; }
+  body.mobile-vers button:not(#mobileBtn) { display: block; width: 100%; margin: 6px 0; box-sizing: border-box; }
+  body.mobile-vers #traitEl, body.mobile-vers #colorEl { max-width: 100%; overflow-wrap: anywhere; margin: 8px 0; }
+  body.mobile-vers #customInput, body.mobile-vers #idInput, body.mobile-vers #itemInput { width: 100%; max-width: 100%; box-sizing: border-box; }
+  body.mobile-vers #stageEl { width: 100%; max-width: 300px; height: auto; aspect-ratio: 2 / 1; }
+  #stageEl {
+    position: relative;
+    width: 150px;
+    height: 75px;
+    margin: 16px auto;
+    background: transparent;
+  }
+  #stageEl img, #stageEl .tintEl {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  #stageEl img { image-rendering: pixelated; }
+  #stageEl .tintEl {
+    -webkit-mask-size: contain;
+    -webkit-mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+    mask-size: contain;
+    mask-position: center;
+    mask-repeat: no-repeat;
+    image-rendering: pixelated;
+  }
+</style>
+<button id="mobileBtn">mobile vers</button>
+<button id="generateBtn">Generate Creature</button>
+<button id="newbornBtn">Newborn</button>
+<button id="customBtn">Generate Custom</button>
+<button id="morphBtn">Morph</button>
 <button id="downloadBtn">Download Image</button>
-<div style="display:flex;gap:16px;justify-content:center;text-align:left">
-<div>Traits:<br><textarea id="customInput" rows="5" cols="25"></textarea><br>UserID: <input id="useridInput"><br>Username: <input id="usernameInput"><br>Id: <input id="idInput"><br><button id="loadIdBtn">load id</button><span id="loadErrorEl" hidden style="margin-left:8px;background:#E53935;color:#fff;padding:2px 8px;border-radius:4px;font-size:12px">ID not found</span></div>
-<div>Mutagems:<br><textarea id="itemInput" rows="5" cols="25"></textarea></div>
-</div>
+<div id="traitEl"></div>
+<div id="colorEl"></div>
+<div><textarea id="customInput" rows="5" cols="30"></textarea></div>
+<div>Id: <input id="idInput"></div>
+<div>Item: <input id="itemInput"></div>
 <div id="stageEl"></div>
-<div><button id="birthpostBtn" style="background:#22C55E;color:#fff">birthpost</button><button id="morphpostBtn" style="background:#E53935;color:#fff">morphpost</button></div>
-<div id="postOutEl" hidden><textarea id="postCodeEl" rows="12" cols="80" readonly></textarea><br><button id="copyPostBtn">Copy BBCode</button> <button id="saveDataBtn" style="background:#FACC15">save data</button><span id="savePopupEl" hidden style="margin-left:8px;background:#22C55E;color:#fff;padding:2px 8px;border-radius:4px;font-size:12px">Saved!</span><div id="postPreviewEl" style="border:1px solid #ccc;padding:12px;margin:12px auto;max-width:700px;text-align:center;background:#fff"></div></div>
-</div>
-<script src="vendor_jszip.min.js"></script>
-<script src="data.js"></script>
-<script src="app.js"></script>
-</body>
-</html>
+<script>
+  function loadImage(src) {
+    return new Promise((resolve, reject) => {
+      const im = new Image();
+      im.crossOrigin = "anonymous";
+      im.onload = () => resolve(im);
+      im.onerror = reject;
+      im.src = src;
+    });
+  }
+  function darken(hex, f) {
+    const n = hex.replace("#", "");
+    const v = (i) => Math.round(parseInt(n.substr(i, 2), 16) * f);
+    return "rgb(" + v(0) + "," + v(2) + "," + v(4) + ")";
+  }
+  function shadeColor(hex) {
+    const n = hex.replace("#", "");
+    let r = parseInt(n.substr(0, 2), 16) / 255;
+    let g = parseInt(n.substr(2, 2), 16) / 255;
+    let b = parseInt(n.substr(4, 2), 16) / 255;
+    const mx = Math.max(r, g, b);
+    const mn = Math.min(r, g, b);
+    let h = 0;
+    let s = 0;
+    const l = (mx + mn) / 2;
+    if (mx !== mn) {
+      const d = mx - mn;
+      s = l > 0.5 ? d / (2 - mx - mn) : d / (mx + mn);
+      if (mx === r) h = (g - b) / d + (g < b ? 6 : 0);
+      else if (mx === g) h = (b - r) / d + 2;
+      else h = (r - g) / d + 4;
+      h /= 6;
+    }
+    s = s < 0.08 ? 0 : Math.min(1, s + 0.10);
+    let rr, gg, bb;
+    if (s === 0) {
+      rr = gg = bb = l;
+    } else {
+      const q = l < 0.5 ? l * (1 + s) : l + s - l * s;
+      const p = 2 * l - q;
+      const tc = (t) => {
+        if (t < 0) t += 1;
+        if (t > 1) t -= 1;
+        if (t < 1/6) return p + (q - p) * 6 * t;
+        if (t < 1/2) return q;
+        if (t < 2/3) return p + (q - p) * (2/3 - t) * 6;
+        return p;
+      };
+      rr = tc(h + 1/3);
+      gg = tc(h);
+      bb = tc(h - 1/3);
+    }
+    const v = (x) => Math.round(x * 255 * 0.25);
+    return "rgb(" + v(rr) + "," + v(gg) + "," + v(bb) + ")";
+  }
+  function hexToHsl(hex) {
+    const n = hex.replace("#", "");
+    let r = parseInt(n.substr(0, 2), 16) / 255;
+    let g = parseInt(n.substr(2, 2), 16) / 255;
+    let b = parseInt(n.substr(4, 2), 16) / 255;
+    const mx = Math.max(r, g, b);
+    const mn = Math.min(r, g, b);
+    let h = 0;
+    let s = 0;
+    const l = (mx + mn) / 2;
+    if (mx !== mn) {
+      const d = mx - mn;
+      s = l > 0.5 ? d / (2 - mx - mn) : d / (mx + mn);
+      if (mx === r) h = (g - b) / d + (g < b ? 6 : 0);
+      else if (mx === g) h = (b - r) / d + 2;
+      else h = (r - g) / d + 4;
+      h /= 6;
+    }
+    return [h, s, l];
+  }
+  function hslToRgb(h, s, l) {
+    let rr, gg, bb;
+    if (s === 0) {
+      rr = gg = bb = l;
+    } else {
+      const q = l < 0.5 ? l * (1 + s) : l + s - l * s;
+      const p = 2 * l - q;
+      const tc = (t) => {
+        if (t < 0) t += 1;
+        if (t > 1) t -= 1;
+        if (t < 1/6) return p + (q - p) * 6 * t;
+        if (t < 1/2) return q;
+        if (t < 2/3) return p + (q - p) * (2/3 - t) * 6;
+        return p;
+      };
+      rr = tc(h + 1/3);
+      gg = tc(h);
+      bb = tc(h - 1/3);
+    }
+    return [rr, gg, bb];
+  }
+  function lineColor(hex) {
+    const c = hexToHsl(hex);
+    const s = c[1] < 0.08 ? 0 : 0.70;
+    const rgb = hslToRgb(c[0], s, c[2]);
+    const v = (x) => Math.round(x * 255 * 0.30);
+    return "rgb(" + v(rgb[0]) + "," + v(rgb[1]) + "," + v(rgb[2]) + ")";
+  }
+  function addSprite(s, hex) {
+    const low = s.src.toLowerCase();
+    const isEyes = low.includes("/eyes/");
+    const isColor = low.includes("color");
+    const isShade = low.includes("shade");
+    const isLine = low.includes("line");
+    let el;
+    if (isEyes) {
+      const isDarkSc = low.includes("sc_color") && window._parts && window._parts.ey && String(window._parts.ey.name.evaluateItem) === "darkwide";
+      if (isDarkSc) {
+        el = document.createElement("div");
+        el.className = "tintEl";
+        el.style.backgroundColor = "#000000";
+        el.style.maskImage = "url(" + s.src + ")";
+        el.style.webkitMaskImage = "url(" + s.src + ")";
+      } else if (low.includes("iris_color")) {
+        el = document.createElement("div");
+        el.className = "tintEl";
+        el.style.backgroundColor = hex;
+        el.style.maskImage = "url(" + s.src + ")";
+        el.style.webkitMaskImage = "url(" + s.src + ")";
+      } else if (low.includes("iris_shade")) {
+        el = document.createElement("div");
+        el.className = "tintEl";
+        el.style.backgroundColor = darken(hex, 0.5);
+        el.style.maskImage = "url(" + s.src + ")";
+        el.style.webkitMaskImage = "url(" + s.src + ")";
+      } else {
+        el = document.createElement("img");
+        el.src = s.src;
+      }
+    } else if (isColor || isShade || isLine) {
+      el = document.createElement("div");
+      el.className = "tintEl";
+      el.style.backgroundColor = isShade ? shadeColor(hex) : isLine ? lineColor(hex) : hex;
+      el.style.maskImage = "url(" + s.src + ")";
+      el.style.webkitMaskImage = "url(" + s.src + ")";
+    } else {
+      el = document.createElement("img");
+      el.src = s.src;
+    }
+    el.style.zIndex = s.layer;
+    if (isShade && !low.includes("iris_shade")) el.style.opacity = "0.25";
+    stageEl.appendChild(el);
+  }
+  function findByName(list, want) {
+    want = String(want).trim().toLowerCase();
+    const all = list.selectAll;
+    for (const item of all) {
+      if (String(item.name.evaluateItem).toLowerCase() === want) return item;
+    }
+    return null;
+  }
+  function syncCustomBox(leg, sh, nk, ns, ey, eh, eb, tl, pri, sec, eyc) {
+    customInput.value = "Primary Color= " + pri.name.evaluateItem + "\nSecondary Color= " + sec.name.evaluateItem + "\nEye Color= " + eyc.name.evaluateItem + "\nShell= " + sh.name.evaluateItem + "\nNeck= " + nk.name.evaluateItem + "\nNose= " + ns.name.evaluateItem + "\nEyes= " + ey.name.evaluateItem + "\nEarhorns= " + eh.name.evaluateItem + "\nEyebrows= " + eb.name.evaluateItem + "\nTail= " + tl.name.evaluateItem + "\nLegs= " + leg.name.evaluateItem;
+  }
+  function renderCreature(leg, sh, nk, ns, ey, eh, eb, tl, pri, sec, eyc) {
+    const secHex = sec.hex.evaluateItem;
+    const priHex = pri.hex.evaluateItem;
+    const eyeHex = eyc.hex.evaluateItem;
+    window._parts = { leg, sh, nk, ns, ey, eh, eb, tl, pri, sec, eyc };
+    traitEl.textContent = "legs: " + leg.name.evaluateItem + " (" + leg.rarity.evaluateItem + ") | shell: " + sh.name.evaluateItem + " (" + sh.rarity.evaluateItem + ") | neck: " + nk.name.evaluateItem + " | nose: " + ns.name.evaluateItem + " | eyes: " + ey.name.evaluateItem + " | earhorns: " + eh.name.evaluateItem + " | eyebrows: " + eb.name.evaluateItem + " | tail: " + tl.name.evaluateItem;
+    colorEl.textContent = "primary: " + pri.name.evaluateItem + " " + priHex + " | secondary: " + sec.name.evaluateItem + " " + secHex + " | eye: " + eyc.name.evaluateItem + " " + eyeHex;
+    stageEl.innerHTML = "";
+    const sprites = root.legSprites(leg).concat(root.shellSprites(sh)).concat(root.neckSprites(nk)).concat(root.noseSprites(ns)).concat(root.eyeSprites(ey)).concat(root.earhornSprites(eh)).concat(root.eyebrowSprites(eb)).concat(root.tailSprites(tl));
+    sprites.sort((a, b) => a.layer - b.layer);
+    window._lastSprites = sprites;
+    window._lastSecHex = secHex;
+    window._lastPriHex = priHex;
+    window._lastEyeHex = eyeHex;
+    window._lastEyeName = String(ey.name.evaluateItem);
+    for (const s of sprites) {
+      const low = s.src.toLowerCase();
+      const isPrimary = low.includes("/shell/") || low.includes("/nose/") || low.includes("/earhorns/");
+      let hex;
+      if (low.includes("/eyes/") && (low.includes("iris_color") || low.includes("iris_shade"))) hex = eyeHex;
+      else hex = isPrimary ? priHex : secHex;
+      addSprite(s, hex);
+    }
+    syncCustomBox(leg, sh, nk, ns, ey, eh, eb, tl, pri, sec, eyc);
+  }
+  async function rollCreature() {
+    renderCreature(root.rollLegs(), root.rollShell(), root.rollNeck(), root.rollNose(), root.rollEyes(), root.rollEarhorns(), root.rollEyebrows(), root.rollTail(), root.primaryColor.selectOne, root.secondaryColor.selectOne, root.eyeColor.selectOne);
+  }
+  async function rollNewborn() {
+    renderCreature(findByName(root.legs, "six"), findByName(root.shell, "stars"), findByName(root.neck, "tufty"), findByName(root.nose, "basic"), findByName(root.eyes, "wide"), findByName(root.earhorns, "pointy"), findByName(root.eyebrows, "circle"), root.rollTail(), root.primaryColor.selectOne, root.secondaryColor.selectOne, root.eyeColor.selectOne);
+  }
+  async function rollCustom() {
+    const want = {};
+    for (const line of customInput.value.split("\n")) {
+      const i = line.indexOf("=");
+      if (i < 0) continue;
+      want[line.slice(0, i).trim().toLowerCase()] = line.slice(i + 1).trim();
+    }
+    const leg = (want["legs"] && findByName(root.legs, want["legs"])) || root.rollLegs();
+    const sh = (want["shell"] && findByName(root.shell, want["shell"])) || root.rollShell();
+    const nk = (want["neck"] && findByName(root.neck, want["neck"])) || root.rollNeck();
+    const ns = (want["nose"] && findByName(root.nose, want["nose"])) || root.rollNose();
+    const ey = (want["eyes"] && findByName(root.eyes, want["eyes"])) || root.rollEyes();
+    const eh = (want["earhorns"] && findByName(root.earhorns, want["earhorns"])) || root.rollEarhorns();
+    const eb = (want["eyebrows"] && findByName(root.eyebrows, want["eyebrows"])) || root.rollEyebrows();
+    const tl = (want["tail"] && findByName(root.tail, want["tail"])) || root.rollTail();
+    const pri = (want["primary color"] && findByName(root.primaryColor, want["primary color"])) || root.primaryColor.selectOne;
+    const sec = (want["secondary color"] && findByName(root.secondaryColor, want["secondary color"])) || root.secondaryColor.selectOne;
+    const eyc = (want["eye color"] && findByName(root.eyeColor, want["eye color"])) || root.eyeColor.selectOne;
+    renderCreature(leg, sh, nk, ns, ey, eh, eb, tl, pri, sec, eyc);
+  }
+  function spriteHex(s) {
+    const low = s.src.toLowerCase();
+    if (low.includes("/eyes/") && low.includes("iris_color")) return window._lastEyeHex;
+    if (low.includes("/eyes/") && low.includes("iris_shade")) return darken(window._lastEyeHex, 0.5);
+    const isPrimary = low.includes("/shell/") || low.includes("/nose/") || low.includes("/earhorns/");
+    return isPrimary ? window._lastPriHex : window._lastSecHex;
+  }
+  async function downloadImage() {
+    const sprites = window._lastSprites;
+    if (!sprites) return;
+    const scale = 1;
+    const loaded = await Promise.all(sprites.map(s => loadImage(s.src)));
+    const w = Math.max(...loaded.map(im => im.naturalWidth));
+    const h = Math.max(...loaded.map(im => im.naturalHeight));
+    const c = document.createElement("canvas");
+    c.width = w * scale;
+    c.height = h * scale;
+    const ctx = c.getContext("2d");
+    ctx.imageSmoothingEnabled = false;
+    for (let i = 0; i < sprites.length; i++) {
+      const s = sprites[i];
+      const im = loaded[i];
+      const low = s.src.toLowerCase();
+      if (low.includes("/eyes/")) {
+        const isDarkSc = low.includes("sc_color") && window._lastEyeName === "darkwide";
+        if (isDarkSc || low.includes("iris_color") || low.includes("iris_shade")) {
+          const t = document.createElement("canvas");
+          t.width = w;
+          t.height = h;
+          const tctx = t.getContext("2d");
+          tctx.imageSmoothingEnabled = false;
+          tctx.drawImage(im, 0, 0);
+          tctx.globalCompositeOperation = "source-in";
+          tctx.fillStyle = isDarkSc ? "#000000" : spriteHex(s);
+          tctx.fillRect(0, 0, w, h);
+          ctx.globalAlpha = (low.includes("shade") && !low.includes("iris_shade")) ? 0.25 : 1;
+          ctx.drawImage(t, 0, 0, c.width, c.height);
+          continue;
+        }
+        ctx.globalAlpha = low.includes("shade") ? 0.25 : 1;
+        ctx.drawImage(im, 0, 0, c.width, c.height);
+        continue;
+      }
+      const hex = spriteHex(s);
+      const isColor = s.src.toLowerCase().includes("color");
+      const isShade = s.src.toLowerCase().includes("shade");
+      const isLine = s.src.toLowerCase().includes("line");
+      ctx.globalAlpha = isShade ? 0.25 : 1;
+      if (isColor || isShade || isLine) {
+        const t = document.createElement("canvas");
+        t.width = w;
+        t.height = h;
+        const tctx = t.getContext("2d");
+        tctx.imageSmoothingEnabled = false;
+        tctx.drawImage(im, 0, 0);
+        tctx.globalCompositeOperation = "source-in";
+        tctx.fillStyle = isShade ? shadeColor(hex) : isLine ? lineColor(hex) : hex;
+        tctx.fillRect(0, 0, w, h);
+        ctx.drawImage(t, 0, 0, c.width, c.height);
+      } else {
+        ctx.drawImage(im, 0, 0, c.width, c.height);
+      }
+    }
+    ctx.globalAlpha = 1;
+    c.toBlob((blob) => {
+      if (!blob) return;
+      const a = document.createElement("a");
+      a.href = URL.createObjectURL(blob);
+      let name = String(idInput.value || "").trim() || "creature";
+      name = name.replace(/[\/\\?%*:|"<>]/g, "_").replace(/\.png$/i, "");
+      a.download = name + ".png";
+      a.click();
+      setTimeout(() => URL.revokeObjectURL(a.href), 5000);
+    });
+  }
+  async function morphCreature() {
+    if (String(itemInput.value).trim().toLowerCase() !== "shellcluster") return;
+    if (!window._parts) return;
+    const p = window._parts;
+    renderCreature(p.leg, root.rollShell(), p.nk, p.ns, p.ey, p.eh, p.eb, p.tl, p.pri, p.sec, p.eyc);
+  }
+  generateBtn.onclick = rollCreature;
+  mobileBtn.onclick = () => {
+    const on = document.body.classList.toggle("mobile-vers");
+    mobileBtn.textContent = on ? "desktop vers" : "mobile vers";
+  };  newbornBtn.onclick = rollNewborn;
+  customBtn.onclick = rollCustom;
+  morphBtn.onclick = morphCreature;
+  downloadBtn.onclick = downloadImage;
+  rollCreature();
+</script>
+
+
+
