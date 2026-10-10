@@ -1,0 +1,1 @@
+PrimaryColor= red SecondaryColor= white EyeColor= cyan PrimaryMarks= core SecondaryMarks= none Eyes= wide Shell= isopod Legs= six Earhorns= innocent Eyebrows= circle Nose= basic Neck= floofy Cheek= tuft Tail= tassel Tertiary= none
