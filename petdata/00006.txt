@@ -1,0 +1,1 @@
+PrimaryColor= purple SecondaryColor= pink EyeColor= cyan PrimaryMarks= powder SecondaryMarks= mittens Eyes= brightwide Shell= clovers Legs= six Earhorns= drooped Eyebrows= circle Nose= basic Neck= floofy Cheek= tuft Tail= fuzzed Tertiary= cherub

@@ -1,0 +1,1 @@
+PrimaryColor= black SecondaryColor= charcoal EyeColor= maroon PrimaryMarks= alternating SecondaryMarks= none Eyes= wide Shell= stars Legs= six Earhorns= pointy Eyebrows= circle Nose= basic Neck= floofy Cheek= tuft Tail= fuzzed Tertiary= none

@@ -1,0 +1,1 @@
+PrimaryColor= black SecondaryColor= yellow EyeColor= orange PrimaryMarks= alternating SecondaryMarks= cuffs Eyes= wide Shell= clovers Legs= six Earhorns= fluffy Eyebrows= alien Nose= bulbs Neck= smooth Cheek= tuft Tail= stinger Tertiary= none

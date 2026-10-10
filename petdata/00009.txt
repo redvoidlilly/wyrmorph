@@ -1,0 +1,1 @@
+PrimaryColor= maroon SecondaryColor= charcoal EyeColor= red PrimaryMarks= ripple SecondaryMarks= cuffs Eyes= brightwide Shell= stars Legs= floater Earhorns= drooped Eyebrows= wing Nose= basic Neck= mothruff Cheek= squishy Tail= tassel Tertiary= crystals

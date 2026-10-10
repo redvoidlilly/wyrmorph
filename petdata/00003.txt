@@ -1,0 +1,1 @@
+PrimaryColor= maroon SecondaryColor= orange EyeColor= yellow PrimaryMarks= core SecondaryMarks= points Eyes= wide Shell= stars Legs= six Earhorns= drake Eyebrows= v Nose= basic Neck= smooth Cheek= tuft Tail= devil Tertiary= dragon

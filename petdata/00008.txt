@@ -1,0 +1,1 @@
+PrimaryColor= olive SecondaryColor= tan EyeColor= darkgrey PrimaryMarks= tips SecondaryMarks= underbelly Eyes= wide Shell= mossy Legs= six Earhorns= innocent Eyebrows= mothy Nose= whisker Neck= floofy Cheek= squishy Tail= stinger Tertiary= none

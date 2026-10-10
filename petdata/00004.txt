@@ -1,0 +1,1 @@
+PrimaryColor= blue SecondaryColor= lightgrey EyeColor= cyan PrimaryMarks= tips SecondaryMarks= socks Eyes= brightwide Shell= clovers Legs= flipper Earhorns= fluffy Eyebrows= circle Nose= basic Neck= smooth Cheek= axolotl Tail= fishy Tertiary= none

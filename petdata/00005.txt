@@ -1,0 +1,1 @@
+PrimaryColor= lime SecondaryColor= yellow EyeColor= black PrimaryMarks= core SecondaryMarks= mittens Eyes= wide Shell= stars Legs= floater Earhorns= fluffy Eyebrows= alien Nose= bulbs Neck= tufty Cheek= tuft Tail= whirl Tertiary= crownhalo
