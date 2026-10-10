@@ -1,0 +1,1 @@
+PrimaryColor= yellow SecondaryColor= darkgrey EyeColor= orange PrimaryMarks= core SecondaryMarks= none Eyes= wide Shell= stars Legs= wyvern Earhorns= pointy Eyebrows= circle Nose= basic Neck= smooth Cheek= tuft Tail= soft Tertiary= none

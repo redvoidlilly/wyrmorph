@@ -1,0 +1,1 @@
+PrimaryColor= ivory SecondaryColor= charcoal EyeColor= skyblue PrimaryMarks= highstripe SecondaryMarks= none Eyes= wide Shell= stars Legs= six Earhorns= pointy Eyebrows= circle Nose= basic Neck= tufty Cheek= tuft Tail= tassel Tertiary= vines

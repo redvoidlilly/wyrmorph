@@ -1,0 +1,1 @@
+PrimaryColor= lightgrey SecondaryColor= coral EyeColor= pink PrimaryMarks= alternating SecondaryMarks= none Eyes= wide Shell= isopod Legs= six Earhorns= pointy Eyebrows= alien Nose= basic Neck= tufty Cheek= tuft Tail= tassel Tertiary= none
