@@ -1,0 +1,1 @@
+PrimaryColor= ivory SecondaryColor= green EyeColor= green PrimaryMarks= highstripe SecondaryMarks= mittens Eyes= wide Shell= isopod Legs= flipper Earhorns= pointy Eyebrows= alien Nose= basic Neck= floofy Cheek= squishy Tail= soft Tertiary= none

@@ -1,0 +1,1 @@
+PrimaryColor= plum SecondaryColor= pink EyeColor= purple PrimaryMarks= ripple SecondaryMarks= underbelly Eyes= wide Shell= stars Legs= six Earhorns= drooped Eyebrows= circle Nose= basic Neck= smooth Cheek= tuft Tail= tassel Tertiary= none

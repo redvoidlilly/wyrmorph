@@ -1,0 +1,1 @@
+PrimaryColor= plum SecondaryColor= skyblue EyeColor= grey PrimaryMarks= highstripe SecondaryMarks= mittens Eyes= wide Shell= stars Legs= floater Earhorns= pointy Eyebrows= circle Nose= whisker Neck= tufty Cheek= tuft Tail= soft Tertiary= none

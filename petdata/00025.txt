@@ -1,0 +1,1 @@
+PrimaryColor= maroon SecondaryColor= coral EyeColor= magenta PrimaryMarks= ripple SecondaryMarks= points Eyes= wide Shell= stars Legs= six Earhorns= drooped Eyebrows= circle Nose= basic Neck= tufty Cheek= tuft Tail= tassel Tertiary= sprouts

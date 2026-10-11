@@ -1,0 +1,1 @@
+PrimaryColor= skyblue SecondaryColor= black EyeColor= cream PrimaryMarks= none SecondaryMarks= underbelly Eyes= darkwide Shell= stars Legs= six Earhorns= pointy Eyebrows= circle Nose= horn Neck= tufty Cheek= tuft Tail= tassel Tertiary= none

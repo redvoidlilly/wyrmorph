@@ -1,0 +1,1 @@
+PrimaryColor= white SecondaryColor= beige EyeColor= teal PrimaryMarks= ripple SecondaryMarks= underbelly Eyes= wide Shell= clovers Legs= six Earhorns= pointy Eyebrows= circle Nose= basic Neck= tufty Cheek= squishy Tail= soft Tertiary= none

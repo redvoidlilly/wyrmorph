@@ -1,0 +1,1 @@
+PrimaryColor= beige SecondaryColor= ivory EyeColor= olive PrimaryMarks= powder SecondaryMarks= none Eyes= wide Shell= stars Legs= six Earhorns= pointy Eyebrows= circle Nose= horn Neck= tufty Cheek= tuft Tail= fishy Tertiary= none

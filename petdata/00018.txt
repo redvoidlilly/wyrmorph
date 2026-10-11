@@ -1,0 +1,1 @@
+PrimaryColor= teal SecondaryColor= skyblue EyeColor= darkgrey PrimaryMarks= lowstripe SecondaryMarks= mittens Eyes= wide Shell= clovers Legs= flipper Earhorns= pointy Eyebrows= circle Nose= basic Neck= smooth Cheek= squishy Tail= soft Tertiary= none

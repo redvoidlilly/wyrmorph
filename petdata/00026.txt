@@ -1,0 +1,1 @@
+PrimaryColor= navy SecondaryColor= ivory EyeColor= pink PrimaryMarks= tips SecondaryMarks= points Eyes= wide Shell= clovers Legs= floater Earhorns= pointy Eyebrows= circle Nose= basic Neck= tufty Cheek= squishy Tail= fuzzed Tertiary= wings

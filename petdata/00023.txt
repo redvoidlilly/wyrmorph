@@ -1,0 +1,1 @@
+PrimaryColor= ivory SecondaryColor= cream EyeColor= lime PrimaryMarks= none SecondaryMarks= none Eyes= wide Shell= stars Legs= flipper Earhorns= fluffy Eyebrows= circle Nose= basic Neck= smooth Cheek= axolotl Tail= soft Tertiary= none
