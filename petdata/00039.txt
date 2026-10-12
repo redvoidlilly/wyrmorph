@@ -1,0 +1,1 @@
+PrimaryColor= brown SecondaryColor= olive EyeColor= cyan PrimaryMarks= highstripe SecondaryMarks= underbelly Eyes= wide Shell= stars Legs= flipper Earhorns= pointy Eyebrows= alien Nose= whisker Neck= tufty Cheek= tuft Tail= tassel Tertiary= none

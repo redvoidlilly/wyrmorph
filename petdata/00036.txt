@@ -1,0 +1,1 @@
+PrimaryColor= maroon SecondaryColor= orange EyeColor= maroon PrimaryMarks= stripes SecondaryMarks= cuffs Eyes= wide Shell= isopod Legs= wyvern Earhorns= drake Eyebrows= circle Nose= basic Neck= mothruff Cheek= tuft Tail= soft Tertiary= none

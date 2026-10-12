@@ -1,0 +1,1 @@
+PrimaryColor= skyblue SecondaryColor= navy EyeColor= coral PrimaryMarks= core SecondaryMarks= none Eyes= wide Shell= mossy Legs= flipper Earhorns= pointy Eyebrows= circle Nose= basic Neck= tufty Cheek= tuft Tail= soft Tertiary= none

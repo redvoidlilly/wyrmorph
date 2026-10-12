@@ -1,0 +1,1 @@
+PrimaryColor= purple SecondaryColor= lime EyeColor= cyan PrimaryMarks= ripple SecondaryMarks= none Eyes= darkwide Shell= clovers Legs= six Earhorns= fluffy Eyebrows= circle Nose= basic Neck= tufty Cheek= axolotl Tail= tassel Tertiary= none

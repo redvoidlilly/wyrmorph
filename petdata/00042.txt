@@ -1,0 +1,1 @@
+PrimaryColor= maroon SecondaryColor= darkgrey EyeColor= violet PrimaryMarks= stripes SecondaryMarks= underbelly Eyes= wide Shell= stars Legs= floater Earhorns= drooped Eyebrows= alien Nose= horn Neck= tufty Cheek= tuft Tail= tassel Tertiary= none

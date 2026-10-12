@@ -1,0 +1,1 @@
+PrimaryColor= darkgrey SecondaryColor= red EyeColor= red PrimaryMarks= stripes SecondaryMarks= cuffs Eyes= wide Shell= stars Legs= six Earhorns= pointy Eyebrows= circle Nose= basic Neck= tufty Cheek= tuft Tail= soft Tertiary= wings

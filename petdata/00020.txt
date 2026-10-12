@@ -1,1 +1,1 @@
-PrimaryColor= yellow SecondaryColor= navy EyeColor= green PrimaryMarks= ripple SecondaryMarks= none Eyes= wide Shell= stars Legs= flipper Earhorns= drake Eyebrows= circle Nose= basic Neck= floofy Cheek= squishy Tail= soft Tertiary= cherub
+PrimaryColor= yellow SecondaryColor= orange EyeColor= green PrimaryMarks= ripple SecondaryMarks= none Eyes= wide Shell= stars Legs= floater Earhorns= drake Eyebrows= circle Nose= basic Neck= floofy Cheek= squishy Tail= soft Tertiary= cherub

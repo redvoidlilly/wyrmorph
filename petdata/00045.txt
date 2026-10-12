@@ -1,0 +1,1 @@
+PrimaryColor= navy SecondaryColor= white EyeColor= violet PrimaryMarks= ripple SecondaryMarks= cuffs Eyes= wide Shell= stars Legs= flipper Earhorns= pointy Eyebrows= alien Nose= bulbs Neck= tufty Cheek= tuft Tail= soft Tertiary= none

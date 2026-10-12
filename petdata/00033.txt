@@ -1,0 +1,1 @@
+PrimaryColor= darkgrey SecondaryColor= grey EyeColor= brown PrimaryMarks= ripple SecondaryMarks= mittens Eyes= darkwide Shell= stars Legs= six Earhorns= pointy Eyebrows= v Nose= basic Neck= tufty Cheek= tuft Tail= tassel Tertiary= none

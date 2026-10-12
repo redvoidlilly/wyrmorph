@@ -1,1 +1,1 @@
-PrimaryColor= blue SecondaryColor= cream EyeColor= coral PrimaryMarks= tips SecondaryMarks= none Eyes= wide Shell= isopod Legs= flipper Earhorns= fluffy Eyebrows= circle Nose= basic Neck= tufty Cheek= tuft Tail= soft Tertiary= none
+PrimaryColor= blue SecondaryColor= cream EyeColor= coral PrimaryMarks= tips SecondaryMarks= none Eyes= wide Shell= isopod Legs= flipper Earhorns= fluffy Eyebrows= circle Nose= basic Neck= tufty Cheek= tuft Tail= fuzzed Tertiary= none

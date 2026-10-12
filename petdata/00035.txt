@@ -1,0 +1,1 @@
+PrimaryColor= ivory SecondaryColor= cyan EyeColor= maroon PrimaryMarks= core SecondaryMarks= none Eyes= darkwide Shell= stars Legs= six Earhorns= pointy Eyebrows= circle Nose= basic Neck= tufty Cheek= axolotl Tail= fuzzed Tertiary= none

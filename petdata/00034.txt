@@ -1,0 +1,1 @@
+PrimaryColor= violet SecondaryColor= charcoal EyeColor= charcoal PrimaryMarks= none SecondaryMarks= none Eyes= wide Shell= stars Legs= six Earhorns= innocent Eyebrows= circle Nose= basic Neck= tufty Cheek= tuft Tail= devil Tertiary= none
