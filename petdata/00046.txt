@@ -1,0 +1,1 @@
+PrimaryColor= charcoal SecondaryColor= cream EyeColor= black PrimaryMarks= tips SecondaryMarks= none Eyes= wide Shell= isopod Legs= six Earhorns= pointy Eyebrows= circle Nose= basic Neck= smooth Cheek= tuft Tail= fishy Tertiary= cherub

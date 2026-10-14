@@ -1,1 +1,1 @@
-PrimaryColor= grey SecondaryColor= brown EyeColor= lime PrimaryMarks= alternating SecondaryMarks= mittens Eyes= wide Shell= clovers Legs= flipper Earhorns= drooped Eyebrows= v Nose= basic Neck= mothruff Cheek= axolotl Tail= tassel Tertiary= cherub
+PrimaryColor= grey SecondaryColor= ivory EyeColor= lime PrimaryMarks= alternating SecondaryMarks= cuffs Eyes= wide Shell= isopod Legs= six Earhorns= drooped Eyebrows= v Nose= horn Neck= mothruff Cheek= axolotl Tail= tassel Tertiary= cherub

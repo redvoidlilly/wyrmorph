@@ -1,1 +1,1 @@
-PrimaryColor= darkgrey SecondaryColor= charcoal EyeColor= brown PrimaryMarks= alternating SecondaryMarks= none Eyes= wide Shell= isopod Legs= six Earhorns= drake Eyebrows= v Nose= whisker Neck= mothruff Cheek= tuft Tail= fuzzed Tertiary= halo
+PrimaryColor= darkgrey SecondaryColor= cream EyeColor= brown PrimaryMarks= alternating SecondaryMarks= none Eyes= wide Shell= isopod Legs= six Earhorns= drake Eyebrows= v Nose= whisker Neck= mothruff Cheek= tuft Tail= fuzzed Tertiary= halo

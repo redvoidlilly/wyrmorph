@@ -1,0 +1,1 @@
+PrimaryColor= brown SecondaryColor= tan EyeColor= gold PrimaryMarks= none SecondaryMarks= none Eyes= wide Shell= mossy Legs= six Earhorns= innocent Eyebrows= circle Nose= basic Neck= tufty Cheek= tuft Tail= soft Tertiary= none

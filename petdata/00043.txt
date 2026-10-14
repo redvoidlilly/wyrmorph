@@ -1,1 +1,1 @@
-PrimaryColor= skyblue SecondaryColor= grey EyeColor= cyan PrimaryMarks= none SecondaryMarks= none Eyes= wide Shell= stars Legs= wyvern Earhorns= fluffy Eyebrows= circle Nose= basic Neck= tufty Cheek= tuft Tail= soft Tertiary= none
+PrimaryColor= skyblue SecondaryColor= grey EyeColor= cyan PrimaryMarks= none SecondaryMarks= none Eyes= wide Shell= stars Legs= wyvern Earhorns= fluffy Eyebrows= circle Nose= basic Neck= tufty Cheek= tuft Tail= soft Tertiary= crystals
