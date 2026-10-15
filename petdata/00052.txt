@@ -1,0 +1,1 @@
+PrimaryColor= lightgrey SecondaryColor= yellow EyeColor= red PrimaryMarks= none SecondaryMarks= none Eyes= wide Shell= isopod Legs= flipper Earhorns= pointy Eyebrows= circle Nose= basic Neck= tufty Cheek= tuft Tail= fuzzed Tertiary= none

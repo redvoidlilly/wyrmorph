@@ -1,0 +1,1 @@
+PrimaryColor= beige SecondaryColor= white EyeColor= orange PrimaryMarks= none SecondaryMarks= none Eyes= wide Shell= clovers Legs= six Earhorns= fluffy Eyebrows= circle Nose= bulbs Neck= tufty Cheek= tuft Tail= soft Tertiary= none

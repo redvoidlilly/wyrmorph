@@ -1,0 +1,1 @@
+PrimaryColor= white SecondaryColor= purple EyeColor= lightgrey PrimaryMarks= none SecondaryMarks= none Eyes= wide Shell= stars Legs= six Earhorns= pointy Eyebrows= circle Nose= whisker Neck= tufty Cheek= tuft Tail= soft Tertiary= sprouts

@@ -1,0 +1,1 @@
+PrimaryColor= red SecondaryColor= plum EyeColor= pink PrimaryMarks= none SecondaryMarks= none Eyes= wide Shell= stars Legs= six Earhorns= drooped Eyebrows= circle Nose= basic Neck= floofy Cheek= tuft Tail= soft Tertiary= none

@@ -1,0 +1,1 @@
+PrimaryColor= grey SecondaryColor= tan EyeColor= lime PrimaryMarks= none SecondaryMarks= mittens Eyes= wide Shell= isopod Legs= six Earhorns= pointy Eyebrows= circle Nose= basic Neck= tufty Cheek= axolotl Tail= soft Tertiary= none

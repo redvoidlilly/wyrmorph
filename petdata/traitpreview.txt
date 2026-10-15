@@ -1,0 +1,1 @@
+PrimaryColor= grey SecondaryColor= grey EyeColor= grey PrimaryMarks= none SecondaryMarks= none Eyes= wide Shell= stars Legs= six Earhorns= pointy Eyebrows= circle Nose= basic Neck= tufty Cheek= tuft Tail= soft Tertiary= none
