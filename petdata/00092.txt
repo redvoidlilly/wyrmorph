@@ -1,0 +1,1 @@
+PrimaryColor= charcoal SecondaryColor= white EyeColor= green PrimaryMarks= none SecondaryMarks= none Eyes= wide Shell= isopod Legs= six Earhorns= drooped Eyebrows= circle Nose= basic Neck= smooth Cheek= tuft Tail= tassel Tertiary= sprouts

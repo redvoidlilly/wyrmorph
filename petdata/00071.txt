@@ -1,0 +1,1 @@
+PrimaryColor= beige SecondaryColor= olive EyeColor= black PrimaryMarks= powder SecondaryMarks= mittens Eyes= wide Shell= spectre Legs= six Earhorns= pointy Eyebrows= v Nose= basic Neck= tufty Cheek= axolotl Tail= tassel Tertiary= none

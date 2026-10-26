@@ -1,0 +1,1 @@
+PrimaryColor= purple SecondaryColor= blue EyeColor= red PrimaryMarks= flowers SecondaryMarks= none Eyes= wide Shell= stars Legs= spider Earhorns= drooped Eyebrows= circle Nose= basic Neck= floofy Cheek= tuft Tail= XX121 Tertiary= none

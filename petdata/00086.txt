@@ -1,0 +1,1 @@
+PrimaryColor= lightgrey SecondaryColor= cyan EyeColor= orange PrimaryMarks= stitch SecondaryMarks= points Eyes= wide Shell= spectre Legs= flipper Earhorns= pointy Eyebrows= mothy Nose= basic Neck= floofy Cheek= axolotl Tail= fuzzed Tertiary= none

@@ -1,0 +1,1 @@
+PrimaryColor= navy SecondaryColor= ivory EyeColor= cream PrimaryMarks= ripple SecondaryMarks= mittens Eyes= wide Shell= stars Legs= six Earhorns= jester Eyebrows= circle Nose= basic Neck= tufty Cheek= tuft Tail= whirl Tertiary= none

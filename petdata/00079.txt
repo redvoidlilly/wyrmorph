@@ -1,0 +1,1 @@
+PrimaryColor= darkgrey SecondaryColor= violet EyeColor= violet PrimaryMarks= none SecondaryMarks= none Eyes= wide Shell= stars Legs= six Earhorns= pointy Eyebrows= skull Nose= basic Neck= tufty Cheek= squishy Tail= whirl Tertiary= none

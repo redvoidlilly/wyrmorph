@@ -1,0 +1,1 @@
+PrimaryColor= black SecondaryColor= darkgrey EyeColor= yellow PrimaryMarks= tips SecondaryMarks= socks Eyes= brightwide Shell= clovers Legs= flipper Earhorns= fluffy Eyebrows= skull Nose= basic Neck= tufty Cheek= tuft Tail= fuzzed Tertiary= cherub

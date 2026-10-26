@@ -1,0 +1,1 @@
+PrimaryColor= ivory SecondaryColor= coral EyeColor= gold PrimaryMarks= ripple SecondaryMarks= none Eyes= wide Shell= stars Legs= six Earhorns= pointy Eyebrows= skull Nose= basic Neck= tufty Cheek= axolotl Tail= tassel Tertiary= none

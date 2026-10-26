@@ -1,0 +1,1 @@
+PrimaryColor= purple SecondaryColor= lightgrey EyeColor= darkgrey PrimaryMarks= highstripe SecondaryMarks= underbelly Eyes= darkwide Shell= spectre Legs= six Earhorns= innocent Eyebrows= mothy Nose= basic Neck= floofy Cheek= axolotl Tail= tassel Tertiary= crownhalo

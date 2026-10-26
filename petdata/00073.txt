@@ -1,0 +1,1 @@
+PrimaryColor= charcoal SecondaryColor= cream EyeColor= magenta PrimaryMarks= none SecondaryMarks= none Eyes= wide Shell= clovers Legs= six Earhorns= pointy Eyebrows= circle Nose= basic Neck= tufty Cheek= tuft Tail= soft Tertiary= none

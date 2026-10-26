@@ -1,1 +1,1 @@
-PrimaryColor= tan SecondaryColor= brown EyeColor= maroon PrimaryMarks= flowers SecondaryMarks= underbelly Eyes= wide Shell= clovers Legs= floater Earhorns= innocent Eyebrows= mothy Nose= basic Neck= floofy Cheek= tuft Tail= tassel Tertiary= none
+PrimaryColor= tan SecondaryColor= brown EyeColor= maroon PrimaryMarks= flowers SecondaryMarks= underbelly Eyes= wide Shell= clovers Legs= floater Earhorns= innocent Eyebrows= mothy Nose= basic Neck= floofy Cheek= tuft Tail= tassel Tertiary= crownhalo

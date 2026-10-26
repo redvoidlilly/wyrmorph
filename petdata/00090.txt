@@ -1,0 +1,1 @@
+PrimaryColor= white SecondaryColor= darkgrey EyeColor= grey PrimaryMarks= none SecondaryMarks= cuffs Eyes= wide Shell= spectre Legs= six Earhorns= pointy Eyebrows= circle Nose= horn Neck= tufty Cheek= tuft Tail= soft Tertiary= none

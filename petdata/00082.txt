@@ -1,0 +1,1 @@
+PrimaryColor= navy SecondaryColor= skyblue EyeColor= purple PrimaryMarks= none SecondaryMarks= none Eyes= wide Shell= stars Legs= six Earhorns= pointy Eyebrows= skull Nose= basic Neck= tufty Cheek= axolotl Tail= tassel Tertiary= none

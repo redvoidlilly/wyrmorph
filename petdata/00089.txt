@@ -1,0 +1,1 @@
+PrimaryColor= black SecondaryColor= tan EyeColor= darkgrey PrimaryMarks= none SecondaryMarks= mittens Eyes= four Shell= stars Legs= six Earhorns= jester Eyebrows= circle Nose= basic Neck= tufty Cheek= tuft Tail= soft Tertiary= none

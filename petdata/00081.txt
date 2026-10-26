@@ -1,0 +1,1 @@
+PrimaryColor= violet SecondaryColor= purple EyeColor= charcoal PrimaryMarks= stitch SecondaryMarks= none Eyes= wide Shell= stars Legs= flipper Earhorns= drake Eyebrows= circle Nose= basic Neck= tufty Cheek= tuft Tail= tassel Tertiary= none

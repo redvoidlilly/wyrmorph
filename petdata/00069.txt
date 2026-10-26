@@ -1,0 +1,1 @@
+PrimaryColor= brown SecondaryColor= darkgrey EyeColor= blue PrimaryMarks= stitch SecondaryMarks= mittens Eyes= wide Shell= stars Legs= six Earhorns= drake Eyebrows= circle Nose= basic Neck= tufty Cheek= tuft Tail= tassel Tertiary= none

@@ -1,0 +1,1 @@
+PrimaryColor= gold SecondaryColor= charcoal EyeColor= yellow PrimaryMarks= lowstripe SecondaryMarks= mittens Eyes= wide Shell= stars Legs= spider Earhorns= pointy Eyebrows= circle Nose= whisker Neck= tufty Cheek= tuft Tail= fuzzed Tertiary= none

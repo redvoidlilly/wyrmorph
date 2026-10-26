@@ -1,0 +1,1 @@
+PrimaryColor= lightgrey SecondaryColor= tan EyeColor= purple PrimaryMarks= none SecondaryMarks= none Eyes= wide Shell= spectre Legs= six Earhorns= pointy Eyebrows= circle Nose= basic Neck= tufty Cheek= tuft Tail= soft Tertiary= none

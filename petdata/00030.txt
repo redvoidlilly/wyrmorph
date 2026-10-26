@@ -1,1 +1,1 @@
-PrimaryColor= orange SecondaryColor= darkgrey EyeColor= orange PrimaryMarks= tips SecondaryMarks= none Eyes= wide Shell= clovers Legs= six Earhorns= drake Eyebrows= circle Nose= basic Neck= tufty Cheek= tuft Tail= tassel Tertiary= none
+PrimaryColor= orange SecondaryColor= darkgrey EyeColor= orange PrimaryMarks= tips SecondaryMarks= none Eyes= wide Shell= clovers Legs= six Earhorns= drake Eyebrows= skull Nose= basic Neck= tufty Cheek= tuft Tail= tassel Tertiary= none

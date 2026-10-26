@@ -1,0 +1,1 @@
+PrimaryColor= skyblue SecondaryColor= cream EyeColor= orange PrimaryMarks= none SecondaryMarks= mittens Eyes= brightwide Shell= clovers Legs= flipper Earhorns= pointy Eyebrows= circle Nose= basic Neck= tufty Cheek= tuft Tail= soft Tertiary= nocturne

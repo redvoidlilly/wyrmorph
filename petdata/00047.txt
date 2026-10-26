@@ -1,1 +1,1 @@
-PrimaryColor= lightgrey SecondaryColor= ivory EyeColor= gold PrimaryMarks= none SecondaryMarks= none Eyes= wide Shell= clovers Legs= six Earhorns= pointy Eyebrows= circle Nose= bulbs Neck= tufty Cheek= squishy Tail= tassel Tertiary= none
+PrimaryColor= lightgrey SecondaryColor= ivory EyeColor= grey PrimaryMarks= flowers SecondaryMarks= none Eyes= brightwide Shell= clovers Legs= six Earhorns= pointy Eyebrows= mothy Nose= bulbs Neck= tufty Cheek= squishy Tail= tassel Tertiary= none

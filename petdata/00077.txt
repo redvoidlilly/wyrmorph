@@ -1,0 +1,1 @@
+PrimaryColor= darkgrey SecondaryColor= white EyeColor= lime PrimaryMarks= highstripe SecondaryMarks= none Eyes= brightwide Shell= isopod Legs= wyvern Earhorns= pointy Eyebrows= wing Nose= basic Neck= tufty Cheek= tuft Tail= XX121 Tertiary= none

@@ -1,0 +1,1 @@
+PrimaryColor= charcoal SecondaryColor= yellow EyeColor= orange PrimaryMarks= core SecondaryMarks= socks Eyes= wide Shell= stars Legs= six Earhorns= pointy Eyebrows= skull Nose= basic Neck= tufty Cheek= tuft Tail= soft Tertiary= none

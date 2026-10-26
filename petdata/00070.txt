@@ -1,0 +1,1 @@
+PrimaryColor= plum SecondaryColor= white EyeColor= pink PrimaryMarks= stitch SecondaryMarks= none Eyes= wide Shell= stars Legs= floater Earhorns= innocent Eyebrows= v Nose= basic Neck= smooth Cheek= tuft Tail= soft Tertiary= none

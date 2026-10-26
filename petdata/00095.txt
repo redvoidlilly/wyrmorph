@@ -1,0 +1,1 @@
+PrimaryColor= yellow SecondaryColor= brown EyeColor= purple PrimaryMarks= ripple SecondaryMarks= mittens Eyes= wide Shell= mossy Legs= six Earhorns= pointy Eyebrows= circle Nose= whisker Neck= floofy Cheek= tuft Tail= XX121 Tertiary= none

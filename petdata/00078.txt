@@ -1,0 +1,1 @@
+PrimaryColor= purple SecondaryColor= navy EyeColor= red PrimaryMarks= none SecondaryMarks= mittens Eyes= four Shell= isopod Legs= six Earhorns= drake Eyebrows= circle Nose= bulbs Neck= tufty Cheek= tuft Tail= devil Tertiary= none

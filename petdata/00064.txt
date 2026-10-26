@@ -1,0 +1,1 @@
+PrimaryColor= plum SecondaryColor= pink EyeColor= skyblue PrimaryMarks= stitch SecondaryMarks= mittens Eyes= four Shell= stars Legs= six Earhorns= fluffy Eyebrows= circle Nose= whisker Neck= tufty Cheek= tuft Tail= XX121 Tertiary= none

@@ -1,0 +1,1 @@
+PrimaryColor= navy SecondaryColor= pink EyeColor= ivory PrimaryMarks= none SecondaryMarks= none Eyes= wide Shell= mossy Legs= six Earhorns= fluffy Eyebrows= circle Nose= basic Neck= tufty Cheek= tuft Tail= tassel Tertiary= none

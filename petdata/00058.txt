@@ -1,0 +1,1 @@
+PrimaryColor= white SecondaryColor= lightgrey EyeColor= skyblue PrimaryMarks= ripple SecondaryMarks= points Eyes= wide Shell= spectre Legs= floater Earhorns= drake Eyebrows= v Nose= basic Neck= floofy Cheek= squishy Tail= fuzzed Tertiary= none

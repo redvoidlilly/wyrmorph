@@ -1,0 +1,1 @@
+PrimaryColor= maroon SecondaryColor= black EyeColor= charcoal PrimaryMarks= core SecondaryMarks= mittens Eyes= four Shell= clovers Legs= spider Earhorns= drooped Eyebrows= circle Nose= basic Neck= mothruff Cheek= tuft Tail= stinger Tertiary= none

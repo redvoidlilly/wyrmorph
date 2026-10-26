@@ -1,0 +1,1 @@
+PrimaryColor= beige SecondaryColor= charcoal EyeColor= cyan PrimaryMarks= none SecondaryMarks= none Eyes= four Shell= isopod Legs= wyvern Earhorns= fluffy Eyebrows= alien Nose= whisker Neck= tufty Cheek= tuft Tail= fuzzed Tertiary= none

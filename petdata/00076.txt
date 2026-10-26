@@ -1,0 +1,1 @@
+PrimaryColor= white SecondaryColor= brown EyeColor= maroon PrimaryMarks= core SecondaryMarks= socks Eyes= wide Shell= clovers Legs= six Earhorns= pointy Eyebrows= v Nose= basic Neck= smooth Cheek= tuft Tail= fishy Tertiary= nocturne
