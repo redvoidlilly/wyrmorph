@@ -1,0 +1,1 @@
+PrimaryColor= charcoal SecondaryColor= plum EyeColor= purple PrimaryMarks= powder SecondaryMarks= cuffs Eyes= darkwide Shell= isopod Legs= flipper Earhorns= drake Eyebrows= wing Nose= bulbs Neck= tufty Cheek= squishy Tail= fuzzed Tertiary= dragon

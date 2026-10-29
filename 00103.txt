@@ -1,0 +1,1 @@
+PrimaryColor= ivory SecondaryColor= lightgrey EyeColor= grey PrimaryMarks= core SecondaryMarks= none Eyes= wide Shell= mossy Legs= flipper Earhorns= fluffy Eyebrows= v Nose= whisker Neck= tufty Cheek= tuft Tail= tassel Tertiary= halo
