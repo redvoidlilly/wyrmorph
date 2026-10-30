@@ -1,1 +1,0 @@
-PrimaryColor= teal SecondaryColor= ivory EyeColor= pink PrimaryMarks= stripes SecondaryMarks= underbelly Eyes= brightwide Shell= clovers Legs= six Earhorns= fluffy Eyebrows= v Nose= whisker Neck= floofy Cheek= axolotl Tail= fuzzed Tertiary= sprouts

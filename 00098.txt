@@ -1,1 +1,0 @@
-PrimaryColor= white SecondaryColor= cyan EyeColor= olive PrimaryMarks= none SecondaryMarks= socks Eyes= wide Shell= mossy Legs= six Earhorns= jester Eyebrows= wing Nose= basic Neck= tufty Cheek= squishy Tail= fuzzed Tertiary= none

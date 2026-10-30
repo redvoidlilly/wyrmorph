@@ -1,1 +1,0 @@
-PrimaryColor= maroon SecondaryColor= skyblue EyeColor= pink PrimaryMarks= none SecondaryMarks= none Eyes= wide Shell= clovers Legs= six Earhorns= jester Eyebrows= mothy Nose= basic Neck= tufty Cheek= tuft Tail= tassel Tertiary= none

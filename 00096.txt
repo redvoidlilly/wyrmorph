@@ -1,1 +1,0 @@
-PrimaryColor= maroon SecondaryColor= ivory EyeColor= pink PrimaryMarks= alternating SecondaryMarks= none Eyes= wide Shell= stars Legs= floater Earhorns= jester Eyebrows= circle Nose= basic Neck= floofy Cheek= tuft Tail= tassel Tertiary= none

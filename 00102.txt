@@ -1,1 +1,0 @@
-PrimaryColor= yellow SecondaryColor= ivory EyeColor= charcoal PrimaryMarks= highstripe SecondaryMarks= none Eyes= wide Shell= isopod Legs= six Earhorns= jester Eyebrows= alien Nose= basic Neck= tufty Cheek= squishy Tail= soft Tertiary= none
