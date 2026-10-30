@@ -1,0 +1,1 @@
+PrimaryColor= red SecondaryColor= grey EyeColor= beige PrimaryMarks= none SecondaryMarks= none Eyes= wide Shell= stars Legs= six Earhorns= drooped Eyebrows= circle Nose= whisker Neck= tufty Cheek= squishy Tail= XX121 Tertiary= none

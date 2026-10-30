@@ -1,1 +1,1 @@
-PrimaryColor= blue SecondaryColor= cream EyeColor= coral PrimaryMarks= tips SecondaryMarks= none Eyes= wide Shell= isopod Legs= floater Earhorns= fluffy Eyebrows= v Nose= basic Neck= tufty Cheek= axolotl Tail= fuzzed Tertiary= none
+PrimaryColor= blue SecondaryColor= cream EyeColor= coral PrimaryMarks= ripple SecondaryMarks= none Eyes= wide Shell= isopod Legs= floater Earhorns= fluffy Eyebrows= v Nose= basic Neck= tufty Cheek= axolotl Tail= fuzzed Tertiary= none

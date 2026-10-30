@@ -1,1 +1,1 @@
-PrimaryColor= black SecondaryColor= gold EyeColor= magenta PrimaryMarks= none SecondaryMarks= none Eyes= wide Shell= stars Legs= six Earhorns= drooped Eyebrows= alien Nose= basic Neck= tufty Cheek= tuft Tail= tassel Tertiary= none
+PrimaryColor= black SecondaryColor= lime EyeColor= magenta PrimaryMarks= none SecondaryMarks= none Eyes= four Shell= stars Legs= six Earhorns= drooped Eyebrows= alien Nose= basic Neck= tufty Cheek= tuft Tail= tassel Tertiary= none

@@ -1,1 +1,1 @@
-PrimaryColor= red SecondaryColor= coral EyeColor= green PrimaryMarks= ripple SecondaryMarks= none Eyes= wide Shell= isopod Legs= flipper Earhorns= drake Eyebrows= circle Nose= basic Neck= tufty Cheek= tuft Tail= XX121 Tertiary= none
+PrimaryColor= red SecondaryColor= coral EyeColor= green PrimaryMarks= ripple SecondaryMarks= none Eyes= wide Shell= clovers Legs= six Earhorns= drake Eyebrows= circle Nose= basic Neck= tufty Cheek= tuft Tail= XX121 Tertiary= none

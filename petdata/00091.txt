@@ -1,1 +1,1 @@
-PrimaryColor= green SecondaryColor= lime EyeColor= lightgrey PrimaryMarks= none SecondaryMarks= none Eyes= wide Shell= stars Legs= six Earhorns= jester Eyebrows= circle Nose= basic Neck= tufty Cheek= tuft Tail= soft Tertiary= none
+PrimaryColor= tan SecondaryColor= darkgrey EyeColor= lightgrey PrimaryMarks= ripple SecondaryMarks= none Eyes= four Shell= stars Legs= six Earhorns= jester Eyebrows= circle Nose= basic Neck= tufty Cheek= tuft Tail= devil Tertiary= vines

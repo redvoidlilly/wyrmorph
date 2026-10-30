@@ -1,0 +1,1 @@
+PrimaryColor= black SecondaryColor= teal EyeColor= teal PrimaryMarks= stripes SecondaryMarks= points Eyes= darkwide Shell= isopod Legs= spider Earhorns= pointy Eyebrows= circle Nose= basic Neck= smooth Cheek= tuft Tail= soft Tertiary= none
