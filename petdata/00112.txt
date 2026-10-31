@@ -1,0 +1,1 @@
+PrimaryColor= white SecondaryColor= black EyeColor= skyblue PrimaryMarks= ripple SecondaryMarks= socks Eyes= wide Shell= isopod Legs= six Earhorns= fluffy Eyebrows= alien Nose= whisker Neck= mothruff Cheek= tuft Tail= soft Tertiary= cherub
