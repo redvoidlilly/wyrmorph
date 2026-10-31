@@ -1,0 +1,1 @@
+PrimaryColor= coral SecondaryColor= grey EyeColor= white PrimaryMarks= ripple SecondaryMarks= cuffs Eyes= darkwide Shell= clovers Legs= six Earhorns= pointy Eyebrows= circle Nose= basic Neck= tufty Cheek= tuft Tail= XX121 Tertiary= none
