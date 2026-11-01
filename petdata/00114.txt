@@ -1,0 +1,1 @@
+PrimaryColor= black SecondaryColor= green EyeColor= yellow PrimaryMarks= none SecondaryMarks= underbelly Eyes= wide Shell= mossy Legs= six Earhorns= jester Eyebrows= circle Nose= basic Neck= tufty Cheek= tuft Tail= soft Tertiary= none

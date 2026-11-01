@@ -1,0 +1,1 @@
+PrimaryColor= maroon SecondaryColor= red EyeColor= yellow PrimaryMarks= tips SecondaryMarks= mittens Eyes= brightwide Shell= isopod Legs= six Earhorns= drooped Eyebrows= circle Nose= whisker Neck= smooth Cheek= tuft Tail= fuzzed Tertiary= cherub
