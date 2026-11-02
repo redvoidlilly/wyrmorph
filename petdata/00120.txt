@@ -1,0 +1,1 @@
+PrimaryColor= charcoal SecondaryColor= orange EyeColor= purple PrimaryMarks= stitch SecondaryMarks= none Eyes= darkwide Shell= mossy Legs= six Earhorns= pointy Eyebrows= circle Nose= basic Neck= tufty Cheek= squishy Tail= soft Tertiary= none
