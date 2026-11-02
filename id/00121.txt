@@ -1,0 +1,1 @@
+PrimaryColor= violet SecondaryColor= magenta EyeColor= cyan PrimaryMarks= core SecondaryMarks= none Eyes= wide Shell= stars Legs= six Earhorns= drooped Eyebrows= circle Nose= basic Neck= tufty Cheek= tuft Tail= soft Tertiary= nocturne
