@@ -1,0 +1,1 @@
+PrimaryColor= gold SecondaryColor= beige EyeColor= purple PrimaryMarks= ripple SecondaryMarks= points Eyes= wide Shell= clovers Legs= flipper Earhorns= drooped Eyebrows= circle Nose= basic Neck= tufty Cheek= tuft Tail= fuzzed Tertiary= dragon

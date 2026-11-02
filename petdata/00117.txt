@@ -1,0 +1,1 @@
+PrimaryColor= coral SecondaryColor= charcoal EyeColor= lightgrey PrimaryMarks= none SecondaryMarks= none Eyes= wide Shell= spectre Legs= six Earhorns= jester Eyebrows= circle Nose= bulbs Neck= tufty Cheek= tuft Tail= soft Tertiary= none

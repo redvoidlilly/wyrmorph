@@ -1,0 +1,1 @@
+PrimaryColor= darkgrey SecondaryColor= white EyeColor= ivory PrimaryMarks= stitch SecondaryMarks= none Eyes= wide Shell= clovers Legs= six Earhorns= pointy Eyebrows= alien Nose= basic Neck= tufty Cheek= axolotl Tail= soft Tertiary= none
