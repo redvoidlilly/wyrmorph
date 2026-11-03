@@ -1,0 +1,1 @@
+PrimaryColor= green SecondaryColor= darkgrey EyeColor= tan PrimaryMarks= lowstripe SecondaryMarks= cuffs Eyes= wide Shell= stars Legs= flipper Earhorns= innocent Eyebrows= circle Nose= basic Neck= smooth Cheek= tuft Tail= fuzzed Tertiary= vines
