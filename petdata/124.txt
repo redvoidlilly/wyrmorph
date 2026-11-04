@@ -1,0 +1,1 @@
+PrimaryColor= charcoal SecondaryColor= plum EyeColor= coral PrimaryMarks= ripple SecondaryMarks= cuffs Eyes= brightwide Shell= isopod Legs= six Earhorns= pointy Eyebrows= alien Nose= whisker Neck= floofy Cheek= tuft Tail= fishy Tertiary= none
