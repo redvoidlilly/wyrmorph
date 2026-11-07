@@ -1,0 +1,1 @@
+PrimaryColor= tan SecondaryColor= beige EyeColor= green PrimaryMarks= none SecondaryMarks= mittens Eyes= wide Shell= stars Legs= six Earhorns= jester Eyebrows= circle Nose= basic Neck= floofy Cheek= tuft Tail= whirl Tertiary= none
