@@ -1,0 +1,1 @@
+PrimaryColor= black SecondaryColor= orange EyeColor= red PrimaryMarks= highstripe SecondaryMarks= socks Eyes= brightwide Shell= stars Legs= six Earhorns= drake Eyebrows= wing Nose= basic Neck= tufty Cheek= squishy Tail= devil Tertiary= nocturne

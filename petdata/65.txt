@@ -1,0 +1,1 @@
+PrimaryColor= black SecondaryColor= purple EyeColor= red PrimaryMarks= ripple SecondaryMarks= cuffs Eyes= darkwide Shell= isopod Legs= spider Earhorns= pointy Eyebrows= skull Nose= basic Neck= smooth Cheek= squishy Tail= tassel Tertiary= none
