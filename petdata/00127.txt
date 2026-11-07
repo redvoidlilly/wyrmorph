@@ -1,0 +1,1 @@
+PrimaryColor= ivory SecondaryColor= skyblue EyeColor= olive PrimaryMarks= alternating SecondaryMarks= none Eyes= wide Shell= clovers Legs= six Earhorns= drake Eyebrows= circle Nose= bulbs Neck= tufty Cheek= axolotl Tail= soft Tertiary= cherub
