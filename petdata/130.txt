@@ -1,0 +1,1 @@
+PrimaryColor= charcoal SecondaryColor= cyan EyeColor= orange PrimaryMarks= drip SecondaryMarks= cuffs Eyes= brightwide Shell= stars Legs= six Earhorns= drooped Eyebrows= v Nose= basic Neck= tufty Cheek= tuft Tail= tassel Tertiary= none

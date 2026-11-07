@@ -1,0 +1,1 @@
+PrimaryColor= cream SecondaryColor= gold EyeColor= beige PrimaryMarks= lowstripe SecondaryMarks= none Eyes= four Shell= mossy Legs= six Earhorns= fluffy Eyebrows= circle Nose= bulbs Neck= tufty Cheek= tuft Tail= soft Tertiary= none
