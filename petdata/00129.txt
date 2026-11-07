@@ -1,0 +1,1 @@
+PrimaryColor= gold SecondaryColor= beige EyeColor= green PrimaryMarks= alternating SecondaryMarks= none Eyes= wide Shell= isopod Legs= six Earhorns= drake Eyebrows= v Nose= horn Neck= smooth Cheek= tuft Tail= whirl Tertiary= vines

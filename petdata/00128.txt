@@ -1,0 +1,1 @@
+PrimaryColor= skyblue SecondaryColor= charcoal EyeColor= blue PrimaryMarks= ripple SecondaryMarks= none Eyes= brightwide Shell= isopod Legs= flipper Earhorns= pointy Eyebrows= circle Nose= horn Neck= tufty Cheek= tuft Tail= soft Tertiary= nocturne
