@@ -1,0 +1,5 @@
+PrimaryColor= plum SecondaryColor= lavender EyeColor= yellow PrimaryMarks= stripes SecondaryMarks= cuffs Eyes= darkwide Shell= clovers Legs= six Earhorns= drake Eyebrows= mothy Nose= bulbs Neck= tufty Cheek= tuft Tail= tempura Tertiary= none
+
+PrimaryColor= green SecondaryColor= white EyeColor= copper PrimaryMarks= drip SecondaryMarks= underbelly Eyes= four Shell= stars Legs= six Earhorns= fluffy Eyebrows= wing Nose= whisker Neck= smooth Cheek= tuft Tail= whirl Tertiary= sprouts
+
+PrimaryColor= grey SecondaryColor= skyblue EyeColor= licorice PrimaryMarks= ripple SecondaryMarks= socks Eyes= grump Shell= clouds Legs= six Earhorns= foxleaf Eyebrows= v Nose= horn Neck= tufty Cheek= tuft Tail= tempura Tertiary= cherub
