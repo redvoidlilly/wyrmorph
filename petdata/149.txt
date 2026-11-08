@@ -1,0 +1,1 @@
+PrimaryColor= navy SecondaryColor= haze EyeColor= lime PrimaryMarks= none SecondaryMarks= socks Eyes= brightwide Shell= spectre Legs= six Earhorns= pointy Eyebrows= circle Nose= basic Neck= tufty Cheek= axolotl Tail= fuzzed Tertiary= none
