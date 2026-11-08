@@ -1,1 +1,1 @@
-PrimaryColor= khaki SecondaryColor= cordovan EyeColor= lightgrey PrimaryMarks= none SecondaryMarks= none Eyes= wide Shell= isopod Legs= swimmereets Earhorns= pointy Eyebrows= circle Nose= basic Neck= tufty Cheek= tuft Tail= soft Tertiary= none
+PrimaryColor= khaki SecondaryColor= mango EyeColor= lightgrey PrimaryMarks= highstripe SecondaryMarks= underbelly Eyes= wide Shell= isopod Legs= swimmereets Earhorns= pointy Eyebrows= circle Nose= basic Neck= tufty Cheek= tuft Tail= soft Tertiary= none
