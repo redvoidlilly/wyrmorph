@@ -1,0 +1,1 @@
+PrimaryColor= apricot SecondaryColor= cream EyeColor= cordovan PrimaryMarks= none SecondaryMarks= none Eyes= wide Shell= stars Legs= swimmereets Earhorns= pointy Eyebrows= skull Nose= basic Neck= tufty Cheek= tuft Tail= soft Tertiary= wings
