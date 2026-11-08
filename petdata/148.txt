@@ -1,5 +1,1 @@
-PrimaryColor= teal SecondaryColor= lightgrey EyeColor= haze PrimaryMarks= none SecondaryMarks= none Eyes= wide Shell= clovers Legs= flipper Earhorns= pointy Eyebrows= circle Nose= basic Neck= tufty Cheek= tuft Tail= soft Tertiary= none
-
-PrimaryColor= white SecondaryColor= white EyeColor= periwinkle PrimaryMarks= none SecondaryMarks= none Eyes= wide Shell= isopod Legs= flipper Earhorns= pointy Eyebrows= circle Nose= basic Neck= tufty Cheek= tuft Tail= soft Tertiary= none
-
 PrimaryColor= khaki SecondaryColor= cordovan EyeColor= lightgrey PrimaryMarks= none SecondaryMarks= none Eyes= wide Shell= isopod Legs= swimmereets Earhorns= pointy Eyebrows= circle Nose= basic Neck= tufty Cheek= tuft Tail= soft Tertiary= none
