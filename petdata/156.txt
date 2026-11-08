@@ -1,0 +1,5 @@
+PrimaryColor= orchid SecondaryColor= white EyeColor= lightgrey PrimaryMarks= ripple SecondaryMarks= none Eyes= wide Shell= spectre Legs= swimmereets Earhorns= drooped Eyebrows= circle Nose= basic Neck= tufty Cheek= tuft Tail= fuzzed Tertiary= none
+
+PrimaryColor= mango SecondaryColor= orange EyeColor= chestnut PrimaryMarks= stripes SecondaryMarks= none Eyes= four Shell= stars Legs= swimmereets Earhorns= foxleaf Eyebrows= circle Nose= basic Neck= tufty Cheek= tuft Tail= fuzzed Tertiary= none
+
+PrimaryColor= darkgrey SecondaryColor= ivory EyeColor= purple PrimaryMarks= tips SecondaryMarks= none Eyes= wide Shell= spectre Legs= flipper Earhorns= drooped Eyebrows= circle Nose= basic Neck= tufty Cheek= tuft Tail= fuzzed Tertiary= none

@@ -1,5 +1,1 @@
-PrimaryColor= chestnut SecondaryColor= skyblue EyeColor= pewter PrimaryMarks= stripes SecondaryMarks= none Eyes= grump Shell= clovers Legs= flipper Earhorns= foxleaf Eyebrows= v Nose= basic Neck= tufty Cheek= tuft Tail= soft Tertiary= crystals
-
 PrimaryColor= brown SecondaryColor= copper EyeColor= sage PrimaryMarks= stripes SecondaryMarks= mittens Eyes= darkwide Shell= clouds Legs= six Earhorns= foxleaf Eyebrows= circle Nose= chomps Neck= leostar Cheek= tuft Tail= tempura Tertiary= dragon
-
-PrimaryColor= licorice SecondaryColor= haze EyeColor= blue PrimaryMarks= alternating SecondaryMarks= mittens Eyes= brightwide Shell= clovers Legs= six Earhorns= foxleaf Eyebrows= ant Nose= whisker Neck= tufty Cheek= axolotl Tail= soft Tertiary= dragon
