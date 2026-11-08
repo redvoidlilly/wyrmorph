@@ -1,0 +1,1 @@
+PrimaryColor= cyan SecondaryColor= white EyeColor= red PrimaryMarks= tips SecondaryMarks= socks Eyes= grump Shell= stars Legs= six Earhorns= foxleaf Eyebrows= circle Nose= basic Neck= leostar Cheek= tuft Tail= tempura Tertiary= none

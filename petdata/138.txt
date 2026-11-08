@@ -1,0 +1,1 @@
+PrimaryColor= pewter SecondaryColor= charcoal EyeColor= navy PrimaryMarks= stripes SecondaryMarks= cuffs Eyes= brightwide Shell= isopod Legs= swimmereets Earhorns= drooped Eyebrows= circle Nose= basic Neck= plated Cheek= tuft Tail= fishy Tertiary= crownhalo

@@ -1,0 +1,1 @@
+PrimaryColor= teal SecondaryColor= haze EyeColor= navy PrimaryMarks= ripple SecondaryMarks= socks Eyes= googly Shell= clovers Legs= swimmereets Earhorns= pointy Eyebrows= ant Nose= gar Neck= tufty Cheek= tuft Tail= fuzzed Tertiary= none

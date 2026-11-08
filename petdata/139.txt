@@ -1,0 +1,1 @@
+PrimaryColor= cordovan SecondaryColor= licorice EyeColor= lightgrey PrimaryMarks= core SecondaryMarks= cuffs Eyes= grump Shell= stars Legs= six Earhorns= innocent Eyebrows= circle Nose= chomps Neck= floofy Cheek= axolotl Tail= devil Tertiary= none

@@ -1,0 +1,1 @@
+PrimaryColor= fern SecondaryColor= chestnut EyeColor= grey PrimaryMarks= highstripe SecondaryMarks= underbelly Eyes= wide Shell= mossy Legs= six Earhorns= pointy Eyebrows= buge Nose= chomps Neck= floofy Cheek= squishy Tail= heavy Tertiary= vines

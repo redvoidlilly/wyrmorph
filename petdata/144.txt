@@ -1,0 +1,1 @@
+PrimaryColor= fern SecondaryColor= khaki EyeColor= yellow PrimaryMarks= powder SecondaryMarks= mittens Eyes= grump Shell= clouds Legs= swimmereets Earhorns= foxleaf Eyebrows= circle Nose= horn Neck= floofy Cheek= axolotl Tail= devil Tertiary= dragon

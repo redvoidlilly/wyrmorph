@@ -1,0 +1,1 @@
+PrimaryColor= orchid SecondaryColor= blush EyeColor= black PrimaryMarks= alternating SecondaryMarks= cuffs Eyes= brightwide Shell= stars Legs= flipper Earhorns= puppy Eyebrows= circle Nose= chomps Neck= tufty Cheek= tuft Tail= fuzzed Tertiary= none

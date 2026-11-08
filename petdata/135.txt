@@ -1,0 +1,1 @@
+PrimaryColor= navy SecondaryColor= skyblue EyeColor= blue PrimaryMarks= stripes SecondaryMarks= points Eyes= wide Shell= stars Legs= six Earhorns= pointy Eyebrows= ant Nose= chomps Neck= plated Cheek= squishy Tail= stinger Tertiary= none

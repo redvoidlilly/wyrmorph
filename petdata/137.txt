@@ -1,0 +1,1 @@
+PrimaryColor= abyss SecondaryColor= plum EyeColor= blush PrimaryMarks= powder SecondaryMarks= underbelly Eyes= brightwide Shell= isopod Legs= swimmereets Earhorns= drooped Eyebrows= alien Nose= basic Neck= leostar Cheek= tuft Tail= tassel Tertiary= crownhalo

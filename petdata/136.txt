@@ -1,0 +1,1 @@
+PrimaryColor= cordovan SecondaryColor= apricot EyeColor= charcoal PrimaryMarks= highstripe SecondaryMarks= underbelly Eyes= googly Shell= stars Legs= six Earhorns= pointy Eyebrows= ant Nose= chomps Neck= plated Cheek= squishy Tail= fuzzed Tertiary= none

@@ -1,0 +1,1 @@
+PrimaryColor= maroon SecondaryColor= coral EyeColor= maroon PrimaryMarks= core SecondaryMarks= points Eyes= googly Shell= clovers Legs= swimmereets Earhorns= pointy Eyebrows= ant Nose= gar Neck= tufty Cheek= tuft Tail= fuzzed Tertiary= none

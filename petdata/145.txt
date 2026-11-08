@@ -1,0 +1,1 @@
+PrimaryColor= black SecondaryColor= maroon EyeColor= maroon PrimaryMarks= alternating SecondaryMarks= none Eyes= googly Shell= stars Legs= swimmereets Earhorns= puppy Eyebrows= circle Nose= gar Neck= smooth Cheek= tuft Tail= soft Tertiary= dragon
