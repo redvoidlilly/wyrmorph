@@ -1,0 +1,1 @@
+PrimaryColor= periwinkle SecondaryColor= pink EyeColor= ivory PrimaryMarks= none SecondaryMarks= cuffs Eyes= wide Shell= stars Legs= six Earhorns= drooped Eyebrows= circle Nose= basic Neck= tufty Cheek= tuft Tail= fuzzed Tertiary= nocturne

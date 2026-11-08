@@ -1,0 +1,1 @@
+PrimaryColor= white SecondaryColor= black EyeColor= charcoal PrimaryMarks= core SecondaryMarks= underbelly Eyes= four Shell= spectre Legs= spider Earhorns= foxleaf Eyebrows= v Nose= basic Neck= mothruff Cheek= tuft Tail= soft Tertiary= none
