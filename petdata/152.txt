@@ -1,5 +1,5 @@
-PrimaryColor= plum SecondaryColor= black EyeColor= navy PrimaryMarks= none SecondaryMarks= none Eyes= wide Shell= stars Legs= six Earhorns= pointy Eyebrows= circle Nose= basic Neck= tufty Cheek= tuft Tail= soft Tertiary= none
+PrimaryColor= plum SecondaryColor= black EyeColor= navy PrimaryMarks= none SecondaryMarks= none Eyes= brightwide Shell= mossy Legs= six Earhorns= pointy Eyebrows= circle Nose= basic Neck= tufty Cheek= tuft Tail= soft Tertiary= none
 
-PrimaryColor= charcoal SecondaryColor= khaki EyeColor= charcoal PrimaryMarks= none SecondaryMarks= none Eyes= wide Shell= stars Legs= six Earhorns= pointy Eyebrows= circle Nose= basic Neck= tufty Cheek= tuft Tail= soft Tertiary= none
+PrimaryColor= charcoal SecondaryColor= khaki EyeColor= charcoal PrimaryMarks= none SecondaryMarks= none Eyes= grump Shell= mossy Legs= six Earhorns= pointy Eyebrows= circle Nose= basic Neck= tufty Cheek= tuft Tail= soft Tertiary= none
 
-PrimaryColor= apricot SecondaryColor= yellow EyeColor= copper PrimaryMarks= none SecondaryMarks= none Eyes= wide Shell= stars Legs= six Earhorns= pointy Eyebrows= circle Nose= basic Neck= tufty Cheek= tuft Tail= soft Tertiary= none
+PrimaryColor= apricot SecondaryColor= yellow EyeColor= copper PrimaryMarks= none SecondaryMarks= none Eyes= darkwide Shell= clovers Legs= six Earhorns= pointy Eyebrows= circle Nose= basic Neck= tufty Cheek= tuft Tail= soft Tertiary= none
