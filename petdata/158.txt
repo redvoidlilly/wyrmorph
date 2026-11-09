@@ -1,0 +1,1 @@
+PrimaryColor= orange SecondaryColor= lightgrey EyeColor= mulberry PrimaryMarks= none SecondaryMarks= none Eyes= wide Shell= stars Legs= six Earhorns= puppy Eyebrows= circle Nose= basic Neck= tufty Cheek= tuft Tail= soft Tertiary= none
