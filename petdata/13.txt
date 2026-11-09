@@ -1,0 +1,1 @@
+PrimaryColor= maroon SecondaryColor= ivory EyeColor= navy PrimaryMarks= lowstripe SecondaryMarks= socks Eyes= wide Shell= stars Legs= six Earhorns= fluffy Eyebrows= ant Nose= whisker Neck= tufty Cheek= tuft Tail= fuzzed Tertiary= halo
