@@ -1,0 +1,5 @@
+PrimaryColor= plum SecondaryColor= periwinkle EyeColor= abyss PrimaryMarks= none SecondaryMarks= none Eyes= wide Shell= clovers Legs= six Earhorns= pointy Eyebrows= alien Nose= basic Neck= tufty Cheek= tuft Tail= devil Tertiary= none
+
+PrimaryColor= lightgrey SecondaryColor= mango EyeColor= amaranth PrimaryMarks= none SecondaryMarks= none Eyes= wide Shell= clovers Legs= six Earhorns= pointy Eyebrows= mothy Nose= basic Neck= tufty Cheek= tuft Tail= tempura Tertiary= none
+
+PrimaryColor= tan SecondaryColor= cordovan EyeColor= charcoal PrimaryMarks= none SecondaryMarks= none Eyes= wide Shell= clouds Legs= six Earhorns= pointy Eyebrows= v Nose= basic Neck= tufty Cheek= tuft Tail= heavy Tertiary= none

@@ -1,5 +1,1 @@
-PrimaryColor= mulberry SecondaryColor= coral EyeColor= magenta PrimaryMarks= tips SecondaryMarks= mittens Eyes= wide Shell= clovers Legs= six Earhorns= foxleaf Eyebrows= circle Nose= bulbs Neck= tufty Cheek= tuft Tail= heavy Tertiary= halo
-
-PrimaryColor= amaranth SecondaryColor= plum EyeColor= charcoal PrimaryMarks= ripple SecondaryMarks= points Eyes= grump Shell= isopod Legs= flipper Earhorns= pointy Eyebrows= v Nose= whisker Neck= tufty Cheek= axolotl Tail= soft Tertiary= dragon
-
 PrimaryColor= blush SecondaryColor= licorice EyeColor= ivory PrimaryMarks= none SecondaryMarks= none Eyes= wide Shell= clovers Legs= six Earhorns= innocent Eyebrows= v Nose= whisker Neck= tufty Cheek= tuft Tail= fuzzed Tertiary= sprouts
