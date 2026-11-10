@@ -1,0 +1,1 @@
+PrimaryColor= chestnut SecondaryColor= maroon EyeColor= charcoal PrimaryMarks= none SecondaryMarks= socks Eyes= wide Shell= stars Legs= flipper Earhorns= fluffy Eyebrows= circle Nose= basic Neck= tufty Cheek= tuft Tail= soft Tertiary= none

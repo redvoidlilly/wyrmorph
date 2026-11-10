@@ -1,0 +1,5 @@
+PrimaryColor= orchid SecondaryColor= apricot EyeColor= amaranth PrimaryMarks= powder SecondaryMarks= none Eyes= wide Shell= mossy Legs= spider Earhorns= pointy Eyebrows= ant Nose= bulbs Neck= tufty Cheek= tuft Tail= soft Tertiary= none
+
+PrimaryColor= maroon SecondaryColor= cream EyeColor= purple PrimaryMarks= core SecondaryMarks= none Eyes= wide Shell= clovers Legs= six Earhorns= pointy Eyebrows= v Nose= whisker Neck= tufty Cheek= tuft Tail= soft Tertiary= nocturne
+
+PrimaryColor= licorice SecondaryColor= olive EyeColor= blue PrimaryMarks= drip SecondaryMarks= none Eyes= four Shell= isopod Legs= six Earhorns= pointy Eyebrows= wing Nose= chomps Neck= tufty Cheek= tuft Tail= soft Tertiary= none

@@ -1,1 +1,1 @@
-PrimaryColor= jade SecondaryColor= radioactive EyeColor= skyblue PrimaryMarks= none SecondaryMarks= none Eyes= wide Shell= stars Legs= six Earhorns= foxleaf Eyebrows= circle Nose= basic Neck= plated Cheek= tuft Tail= devil Tertiary= none
+PrimaryColor= jade SecondaryColor= copper EyeColor= skyblue PrimaryMarks= none SecondaryMarks= none Eyes= wide Shell= clovers Legs= six Earhorns= foxleaf Eyebrows= circle Nose= basic Neck= plated Cheek= tuft Tail= devil Tertiary= none

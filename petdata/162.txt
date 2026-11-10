@@ -1,0 +1,1 @@
+PrimaryColor= charcoal SecondaryColor= lightgrey EyeColor= purple PrimaryMarks= core SecondaryMarks= underbelly Eyes= wide Shell= isopod Legs= six Earhorns= fluffy Eyebrows= alien Nose= basic Neck= tufty Cheek= tuft Tail= whirl Tertiary= vines

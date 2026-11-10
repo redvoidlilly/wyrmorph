@@ -1,0 +1,5 @@
+PrimaryColor= black SecondaryColor= licorice EyeColor= mulberry PrimaryMarks= none SecondaryMarks= none Eyes= wide Shell= isopod Legs= six Earhorns= fluffy Eyebrows= circle Nose= basic Neck= tufty Cheek= tuft Tail= fuzzed Tertiary= none
+
+PrimaryColor= cream SecondaryColor= chestnut EyeColor= mango PrimaryMarks= none SecondaryMarks= none Eyes= wide Shell= clovers Legs= six Earhorns= fluffy Eyebrows= circle Nose= basic Neck= tufty Cheek= tuft Tail= fuzzed Tertiary= none
+
+PrimaryColor= mulberry SecondaryColor= pewter EyeColor= lime PrimaryMarks= none SecondaryMarks= none Eyes= wide Shell= mossy Legs= six Earhorns= drake Eyebrows= circle Nose= basic Neck= tufty Cheek= tuft Tail= stinger Tertiary= none
