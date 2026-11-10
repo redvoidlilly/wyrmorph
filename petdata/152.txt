@@ -1,1 +1,1 @@
-PrimaryColor= charcoal SecondaryColor= khaki EyeColor= charcoal PrimaryMarks= none SecondaryMarks= none Eyes= grump Shell= mossy Legs= six Earhorns= pointy Eyebrows= circle Nose= basic Neck= tufty Cheek= tuft Tail= soft Tertiary= none
+PrimaryColor= charcoal SecondaryColor= cordovan EyeColor= charcoal PrimaryMarks= none SecondaryMarks= none Eyes= grump Shell= mossy Legs= six Earhorns= pointy Eyebrows= circle Nose= basic Neck= mothruff Cheek= axolotl Tail= soft Tertiary= none
