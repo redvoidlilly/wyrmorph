@@ -1,1 +1,1 @@
-PrimaryColor= grey SecondaryColor= copper EyeColor= cream PrimaryMarks= none SecondaryMarks= none Eyes= wide Shell= stars Legs= six Earhorns= pointy Eyebrows= skull Nose= basic Neck= tufty Cheek= tuft Tail= soft Tertiary= none
+PrimaryColor= ivory SecondaryColor= lavender EyeColor= cream PrimaryMarks= none SecondaryMarks= none Eyes= wide Shell= clovers Legs= six Earhorns= pointy Eyebrows= skull Nose= basic Neck= floofy Cheek= tuft Tail= fishy Tertiary= none

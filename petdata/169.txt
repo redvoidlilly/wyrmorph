@@ -1,0 +1,1 @@
+PrimaryColor= skyblue SecondaryColor= charcoal EyeColor= jade PrimaryMarks= none SecondaryMarks= none Eyes= wide Shell= stars Legs= six Earhorns= puppy Eyebrows= skull Nose= basic Neck= tufty Cheek= tuft Tail= tassel Tertiary= none

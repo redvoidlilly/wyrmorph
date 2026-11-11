@@ -1,0 +1,1 @@
+PrimaryColor= cordovan SecondaryColor= cream EyeColor= copper PrimaryMarks= none SecondaryMarks= none Eyes= wide Shell= stars Legs= six Earhorns= pointy Eyebrows= circle Nose= horn Neck= tufty Cheek= tuft Tail= soft Tertiary= vines

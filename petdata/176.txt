@@ -1,0 +1,5 @@
+PrimaryColor= beige SecondaryColor= cordovan EyeColor= ivory PrimaryMarks= none SecondaryMarks= none Eyes= wide Shell= stars Legs= spider Earhorns= pointy Eyebrows= circle Nose= basic Neck= tufty Cheek= tuft Tail= soft Tertiary= none
+
+PrimaryColor= cyan SecondaryColor= coral EyeColor= olive PrimaryMarks= none SecondaryMarks= none Eyes= wide Shell= stars Legs= six Earhorns= pointy Eyebrows= skull Nose= basic Neck= tufty Cheek= tuft Tail= soft Tertiary= none
+
+PrimaryColor= violet SecondaryColor= white EyeColor= olive PrimaryMarks= none SecondaryMarks= none Eyes= four Shell= stars Legs= six Earhorns= pointy Eyebrows= circle Nose= basic Neck= tufty Cheek= tuft Tail= soft Tertiary= none

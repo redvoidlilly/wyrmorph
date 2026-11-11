@@ -1,0 +1,5 @@
+PrimaryColor= cyan SecondaryColor= apricot EyeColor= haze PrimaryMarks= flowers SecondaryMarks= socks Eyes= wide Shell= stars Legs= six Earhorns= drake Eyebrows= circle Nose= basic Neck= smooth Cheek= tuft Tail= stinger Tertiary= none
+
+PrimaryColor= black SecondaryColor= haze EyeColor= lime PrimaryMarks= powder SecondaryMarks= socks Eyes= wide Shell= stars Legs= six Earhorns= fluffy Eyebrows= circle Nose= basic Neck= plated Cheek= tuft Tail= heavy Tertiary= none
+
+PrimaryColor= brown SecondaryColor= cream EyeColor= chestnut PrimaryMarks= core SecondaryMarks= cuffs Eyes= wide Shell= stars Legs= six Earhorns= drooped Eyebrows= circle Nose= basic Neck= smooth Cheek= tuft Tail= stinger Tertiary= none

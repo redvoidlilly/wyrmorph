@@ -1,0 +1,1 @@
+PrimaryColor= orchid SecondaryColor= periwinkle EyeColor= brown PrimaryMarks= core SecondaryMarks= underbelly Eyes= four Shell= stars Legs= six Earhorns= pointy Eyebrows= circle Nose= basic Neck= mothruff Cheek= tuft Tail= whirl Tertiary= none
