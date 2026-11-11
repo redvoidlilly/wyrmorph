@@ -1,0 +1,1 @@
+PrimaryColor= ivory SecondaryColor= grey EyeColor= orange PrimaryMarks= none SecondaryMarks= none Eyes= wide Shell= stars Legs= wyvern Earhorns= drooped Eyebrows= circle Nose= basic Neck= tufty Cheek= tuft Tail= soft Tertiary= none
