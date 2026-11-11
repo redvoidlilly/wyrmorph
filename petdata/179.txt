@@ -1,0 +1,5 @@
+PrimaryColor= red SecondaryColor= apricot EyeColor= darkgrey PrimaryMarks= none SecondaryMarks= none Eyes= brightwide Shell= stars Legs= spider Earhorns= pointy Eyebrows= circle Nose= basic Neck= tufty Cheek= squishy Tail= soft Tertiary= sprouts
+
+PrimaryColor= teal SecondaryColor= tan EyeColor= lavender PrimaryMarks= none SecondaryMarks= none Eyes= brightwide Shell= stars Legs= flipper Earhorns= pointy Eyebrows= circle Nose= basic Neck= tufty Cheek= axolotl Tail= soft Tertiary= nocturne
+
+PrimaryColor= radioactive SecondaryColor= lime EyeColor= mulberry PrimaryMarks= none SecondaryMarks= none Eyes= darkwide Shell= stars Legs= flipper Earhorns= pointy Eyebrows= skull Nose= basic Neck= tufty Cheek= squishy Tail= soft Tertiary= sprouts
