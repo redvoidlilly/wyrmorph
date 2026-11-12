@@ -1,1 +1,1 @@
-PrimaryColor= navy SecondaryColor= pewter EyeColor= ivory PrimaryMarks= none SecondaryMarks= none Eyes= wide Shell= mossy Legs= six Earhorns= fluffy Eyebrows= circle Nose= basic Neck= tufty Cheek= tuft Tail= tassel Tertiary= none
+PrimaryColor= navy SecondaryColor= pewter EyeColor= ivory PrimaryMarks= none SecondaryMarks= cuffs Eyes= wide Shell= mossy Legs= six Earhorns= fluffy Eyebrows= circle Nose= basic Neck= leostar Cheek= axolotl Tail= tassel Tertiary= none
