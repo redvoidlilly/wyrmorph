@@ -1,0 +1,1 @@
+PrimaryColor= lightgrey SecondaryColor= blue EyeColor= darkgrey PrimaryMarks= flowers SecondaryMarks= socks Eyes= darkwide Shell= clouds Legs= six Earhorns= foxleaf Eyebrows= circle Nose= basic Neck= tufty Cheek= squishy Tail= soft Tertiary= halo
