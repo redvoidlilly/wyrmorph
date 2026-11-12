@@ -1,5 +1,1 @@
 PrimaryColor= copper SecondaryColor= copper EyeColor= haze PrimaryMarks= powder SecondaryMarks= mittens Eyes= wide Shell= clovers Legs= six Earhorns= jester Eyebrows= alien Nose= basic Neck= tufty Cheek= axolotl Tail= whirl Tertiary= none
-
-PrimaryColor= darkgrey SecondaryColor= lime EyeColor= beige PrimaryMarks= stitch SecondaryMarks= underbelly Eyes= wide Shell= clovers Legs= six Earhorns= pointy Eyebrows= alien Nose= basic Neck= tufty Cheek= squishy Tail= fishy Tertiary= none
-
-PrimaryColor= amaranth SecondaryColor= skyblue EyeColor= cream PrimaryMarks= powder SecondaryMarks= cuffs Eyes= wide Shell= isopod Legs= six Earhorns= pointy Eyebrows= buge Nose= basic Neck= tufty Cheek= axolotl Tail= fuzzed Tertiary= nocturne

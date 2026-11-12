@@ -1,0 +1,1 @@
+PrimaryColor= abyss SecondaryColor= amaranth EyeColor= blush PrimaryMarks= none SecondaryMarks= none Eyes= wide Shell= stars Legs= six Earhorns= pointy Eyebrows= circle Nose= whisker Neck= leostar Cheek= tuft Tail= tassel Tertiary= none

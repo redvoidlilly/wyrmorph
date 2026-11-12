@@ -1,0 +1,1 @@
+PrimaryColor= darkgrey SecondaryColor= lime EyeColor= ivory PrimaryMarks= none SecondaryMarks= points Eyes= wide Shell= isopod Legs= spider Earhorns= innocent Eyebrows= circle Nose= basic Neck= tufty Cheek= axolotl Tail= stinger Tertiary= none
