@@ -1,0 +1,1 @@
+PrimaryColor= abyss SecondaryColor= skyblue EyeColor= pewter PrimaryMarks= none SecondaryMarks= none Eyes= wide Shell= stars Legs= flipper Earhorns= pointy Eyebrows= circle Nose= basic Neck= tufty Cheek= tuft Tail= soft Tertiary= halo
