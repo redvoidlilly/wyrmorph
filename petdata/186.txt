@@ -1,0 +1,5 @@
+PrimaryColor= chestnut SecondaryColor= apricot EyeColor= mango PrimaryMarks= none SecondaryMarks= cuffs Eyes= wide Shell= stars Legs= six Earhorns= jester Eyebrows= circle Nose= basic Neck= tufty Cheek= tuft Tail= soft Tertiary= none
+
+PrimaryColor= licorice SecondaryColor= chestnut EyeColor= copper PrimaryMarks= stitch SecondaryMarks= socks Eyes= wide Shell= stars Legs= six Earhorns= pointy Eyebrows= circle Nose= basic Neck= tufty Cheek= tuft Tail= soft Tertiary= none
+
+PrimaryColor= orange SecondaryColor= lightgrey EyeColor= blue PrimaryMarks= none SecondaryMarks= points Eyes= wide Shell= stars Legs= six Earhorns= pointy Eyebrows= skull Nose= basic Neck= tufty Cheek= tuft Tail= soft Tertiary= none

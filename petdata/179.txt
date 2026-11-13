@@ -1,1 +1,1 @@
-PrimaryColor= teal SecondaryColor= tan EyeColor= lavender PrimaryMarks= none SecondaryMarks= none Eyes= brightwide Shell= stars Legs= flipper Earhorns= pointy Eyebrows= circle Nose= basic Neck= tufty Cheek= axolotl Tail= soft Tertiary= nocturne
+PrimaryColor= teal SecondaryColor= darkgrey EyeColor= lavender PrimaryMarks= highstripe SecondaryMarks= none Eyes= brightwide Shell= stars Legs= flipper Earhorns= pointy Eyebrows= circle Nose= basic Neck= tufty Cheek= axolotl Tail= soft Tertiary= nocturne

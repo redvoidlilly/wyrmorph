@@ -1,0 +1,1 @@
+PrimaryColor= darkgrey SecondaryColor= grey EyeColor= ivory PrimaryMarks= highstripe SecondaryMarks= mittens Eyes= darkwide Shell= spectre Legs= six Earhorns= pointy Eyebrows= v Nose= basic Neck= tufty Cheek= tuft Tail= tempura Tertiary= halo
