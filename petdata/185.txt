@@ -1,5 +1,1 @@
 PrimaryColor= yellow SecondaryColor= mango EyeColor= skyblue PrimaryMarks= powder SecondaryMarks= none Eyes= wide Shell= isopod Legs= spider Earhorns= pointy Eyebrows= mothy Nose= basic Neck= floofy Cheek= tuft Tail= fuzzed Tertiary= none
-
-PrimaryColor= blush SecondaryColor= darkgrey EyeColor= brown PrimaryMarks= stitch SecondaryMarks= none Eyes= wide Shell= clovers Legs= six Earhorns= pointy Eyebrows= v Nose= basic Neck= plated Cheek= tuft Tail= stinger Tertiary= none
-
-PrimaryColor= purple SecondaryColor= cream EyeColor= olive PrimaryMarks= lowstripe SecondaryMarks= none Eyes= wide Shell= isopod Legs= six Earhorns= pointy Eyebrows= alien Nose= basic Neck= floofy Cheek= tuft Tail= fuzzed Tertiary= nocturne

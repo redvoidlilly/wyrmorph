@@ -1,0 +1,1 @@
+PrimaryColor= khaki SecondaryColor= tan EyeColor= yellow PrimaryMarks= core SecondaryMarks= mittens Eyes= darkwide Shell= stars Legs= six Earhorns= drooped Eyebrows= alien Nose= chomps Neck= floofy Cheek= tuft Tail= heavy Tertiary= halo

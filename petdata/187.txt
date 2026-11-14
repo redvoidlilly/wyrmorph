@@ -1,0 +1,1 @@
+PrimaryColor= licorice SecondaryColor= cyan EyeColor= brown PrimaryMarks= none SecondaryMarks= none Eyes= wide Shell= mossy Legs= six Earhorns= drooped Eyebrows= circle Nose= basic Neck= tufty Cheek= axolotl Tail= devil Tertiary= none
