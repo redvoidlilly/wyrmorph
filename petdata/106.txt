@@ -1,0 +1,1 @@
+PrimaryColor= ivory SecondaryColor= skyblue EyeColor= pink PrimaryMarks= stripes SecondaryMarks= none Eyes= wide Shell= clovers Legs= six Earhorns= jester Eyebrows= circle Nose= basic Neck= tufty Cheek= tuft Tail= tassel Tertiary= none
