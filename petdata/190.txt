@@ -1,0 +1,5 @@
+PrimaryColor= apricot SecondaryColor= white EyeColor= fern PrimaryMarks= highstripe SecondaryMarks= none Eyes= grump Shell= isopod Legs= flipper Earhorns= foxleaf Eyebrows= ant Nose= bulbs Neck= tufty Cheek= squishy Tail= fuzzed Tertiary= crownhalo
+
+PrimaryColor= plum SecondaryColor= coral EyeColor= coral PrimaryMarks= powder SecondaryMarks= none Eyes= grump Shell= clovers Legs= six Earhorns= fluffy Eyebrows= ant Nose= basic Neck= floofy Cheek= squishy Tail= tempura Tertiary= none
+
+PrimaryColor= olive SecondaryColor= black EyeColor= black PrimaryMarks= tips SecondaryMarks= none Eyes= wide Shell= stars Legs= swimmereets Earhorns= innocent Eyebrows= alien Nose= basic Neck= tufty Cheek= axolotl Tail= tempura Tertiary= none

@@ -1,0 +1,1 @@
+PrimaryColor= haze SecondaryColor= darkgrey EyeColor= violet PrimaryMarks= tips SecondaryMarks= underbelly Eyes= darkwide Shell= stars Legs= six Earhorns= drake Eyebrows= mothy Nose= basic Neck= smooth Cheek= tuft Tail= fuzzed Tertiary= none
