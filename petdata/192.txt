@@ -1,0 +1,5 @@
+PrimaryColor= black SecondaryColor= coral EyeColor= ivory PrimaryMarks= core SecondaryMarks= none Eyes= grump Shell= isopod Legs= six Earhorns= puppy Eyebrows= alien Nose= chomps Neck= plated Cheek= tuft Tail= soft Tertiary= vines
+
+PrimaryColor= olive SecondaryColor= apricot EyeColor= white PrimaryMarks= ripple SecondaryMarks= cuffs Eyes= darkwide Shell= stars Legs= six Earhorns= drooped Eyebrows= alien Nose= bulbs Neck= tufty Cheek= squishy Tail= soft Tertiary= crownhalo
+
+PrimaryColor= brown SecondaryColor= ivory EyeColor= coral PrimaryMarks= powder SecondaryMarks= mittens Eyes= brightwide Shell= clovers Legs= six Earhorns= fluffy Eyebrows= wing Nose= basic Neck= smooth Cheek= squishy Tail= heavy Tertiary= vines
