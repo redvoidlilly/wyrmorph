@@ -1,0 +1,1 @@
+PrimaryColor= copper SecondaryColor= gold EyeColor= brown PrimaryMarks= powder SecondaryMarks= socks Eyes= wide Shell= stars Legs= six Earhorns= pointy Eyebrows= alien Nose= basic Neck= tufty Cheek= tuft Tail= soft Tertiary= none

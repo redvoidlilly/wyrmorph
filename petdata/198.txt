@@ -1,0 +1,1 @@
+PrimaryColor= green SecondaryColor= ivory EyeColor= magenta PrimaryMarks= none SecondaryMarks= points Eyes= wide Shell= stars Legs= six Earhorns= pointy Eyebrows= circle Nose= basic Neck= tufty Cheek= tuft Tail= soft Tertiary= nocturne
