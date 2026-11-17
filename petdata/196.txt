@@ -1,0 +1,1 @@
+PrimaryColor= plum SecondaryColor= cream EyeColor= brown PrimaryMarks= core SecondaryMarks= none Eyes= brightwide Shell= isopod Legs= six Earhorns= puppy Eyebrows= v Nose= basic Neck= tufty Cheek= squishy Tail= soft Tertiary= cherub

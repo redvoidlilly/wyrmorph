@@ -1,5 +1,1 @@
-PrimaryColor= blush SecondaryColor= charcoal EyeColor= green PrimaryMarks= lowstripe SecondaryMarks= points Eyes= darkwide Shell= stars Legs= six Earhorns= drooped Eyebrows= circle Nose= whisker Neck= tufty Cheek= squishy Tail= fishy Tertiary= vines
-
 PrimaryColor= orange SecondaryColor= licorice EyeColor= tan PrimaryMarks= ripple SecondaryMarks= points Eyes= wide Shell= clovers Legs= six Earhorns= innocent Eyebrows= ant Nose= basic Neck= floofy Cheek= tuft Tail= stinger Tertiary= none
-
-PrimaryColor= mulberry SecondaryColor= cordovan EyeColor= lavender PrimaryMarks= core SecondaryMarks= socks Eyes= wide Shell= stars Legs= wyvern Earhorns= pointy Eyebrows= alien Nose= bulbs Neck= tufty Cheek= tuft Tail= heavy Tertiary= shedding

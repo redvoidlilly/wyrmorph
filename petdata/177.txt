@@ -1,1 +1,1 @@
-PrimaryColor= violet SecondaryColor= lavender EyeColor= red PrimaryMarks= none SecondaryMarks= none Eyes= wide Shell= isopod Legs= six Earhorns= pointy Eyebrows= circle Nose= basic Neck= tufty Cheek= tuft Tail= fuzzed Tertiary= none
+PrimaryColor= violet SecondaryColor= lavender EyeColor= red PrimaryMarks= none SecondaryMarks= underbelly Eyes= wide Shell= isopod Legs= swimmereets Earhorns= pointy Eyebrows= circle Nose= basic Neck= tufty Cheek= tuft Tail= fuzzed Tertiary= none
