@@ -1,0 +1,1 @@
+PrimaryColor= mango SecondaryColor= blue EyeColor= mango PrimaryMarks= none SecondaryMarks= mittens Eyes= wide Shell= stars Legs= floater Earhorns= fluffy Eyebrows= circle Nose= chomps Neck= tufty Cheek= tuft Tail= XX121 Tertiary= none
