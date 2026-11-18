@@ -1,0 +1,1 @@
+PrimaryColor= apricot SecondaryColor= lightgrey EyeColor= orchid PrimaryMarks= none SecondaryMarks= none Eyes= wide Shell= clovers Legs= floater Earhorns= fluffy Eyebrows= circle Nose= basic Neck= tufty Cheek= tuft Tail= soft Tertiary= none
