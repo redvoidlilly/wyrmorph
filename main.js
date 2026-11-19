@@ -23,5 +23,26 @@ const rarityWeights = {
 	charmed: 75
 };
 
+// tab button functionality 
+function showTab(event, tabName) {
+  var i, tabContent, tabName;
+
+  // hide all
+  tabContent = document.getElementsByClassName("tabContent");
+  for (i = 0; i < tabContent.length; i++) {
+    tabContent[i].style.display = "none";
+  }
+
+  // set inactive
+  tabContent = document.getElementsByClassName("tabContent");
+  for (i = 0; i < tabContent.length; i++) {
+    tabContent[i].className = tabContent[i].className.replace("active", "");
+  }
+
+  // set active
+  document.getElementById(tabName).style.display = "block";
+  event.currentTarget.className += "active";
+}
+window.showTab = showTab;
 
 export { rarityWeights, shell, leg, neck, cheek, nose, eye, earhorn, eyebrow, tail, hindLegFiles, colors, primaryMarks, secondaryMarks, tertiary, secondaryColor, primaryColor, eyeColor, spriteLayer, rollTraits };
