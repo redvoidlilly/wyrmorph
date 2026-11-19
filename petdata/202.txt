@@ -1,0 +1,1 @@
+PrimaryColor= white SecondaryColor= fern EyeColor= haze PrimaryMarks= none SecondaryMarks= none Eyes= wide Shell= spectre Legs= six Earhorns= pointy Eyebrows= ant Nose= basic Neck= tufty Cheek= tuft Tail= stinger Tertiary= none
