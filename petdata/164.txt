@@ -1,1 +1,1 @@
-PrimaryColor= ivory SecondaryColor= lavender EyeColor= cream PrimaryMarks= none SecondaryMarks= none Eyes= wide Shell= clovers Legs= six Earhorns= pointy Eyebrows= skull Nose= basic Neck= floofy Cheek= tuft Tail= fishy Tertiary= none
+PrimaryColor= ivory SecondaryColor= lavender EyeColor= cream PrimaryMarks= none SecondaryMarks= socks Eyes= wide Shell= clovers Legs= six Earhorns= pointy Eyebrows= skull Nose= basic Neck= floofy Cheek= tuft Tail= fishy Tertiary= winglits

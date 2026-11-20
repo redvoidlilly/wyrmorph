@@ -1,1 +1,1 @@
-PrimaryColor= licorice SecondaryColor= chestnut EyeColor= charcoal PrimaryMarks= none SecondaryMarks= none Eyes= wide Shell= stars Legs= six Earhorns= pointy Eyebrows= skull Nose= basic Neck= tufty Cheek= tuft Tail= soft Tertiary= none
+PrimaryColor= licorice SecondaryColor= chestnut EyeColor= maroon PrimaryMarks= none SecondaryMarks= none Eyes= wide Shell= isopod Legs= six Earhorns= puppy Eyebrows= skull Nose= basic Neck= tufty Cheek= tuft Tail= fuzzed Tertiary= none
