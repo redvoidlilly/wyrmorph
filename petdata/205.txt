@@ -1,0 +1,1 @@
+PrimaryColor= violet SecondaryColor= purple EyeColor= orchid PrimaryMarks= stripes SecondaryMarks= socks Eyes= brightwide Shell= isopod Legs= six Earhorns= puppy Eyebrows= mothy Nose= basic Neck= leostar Cheek= squishy Tail= tempura Tertiary= crownhalo
