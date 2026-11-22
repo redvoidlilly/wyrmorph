@@ -1,27 +1,18 @@
-import { shell } from "./shell.js";
-import { leg, hindLegFiles } from "./leg.js";
-import { neck } from "./neck.js";
-import { cheek } from "./cheek.js";
-import { nose } from "./nose.js";
-import { eye } from "./eye.js";
-import { earhorn } from "./earhorn.js";
-import { eyebrow } from "./eyebrow.js";
-import { tail } from "./tail.js";
-import { colors, secondaryColor, primaryColor, eyeColor } from "./color.js";
-import { primaryMarks } from "./primaryMarks.js";
-import { secondaryMarks } from "./secondaryMarks.js";
-import { tertiary } from "./tertiary.js";
-import { spriteLayer } from "./layer.js";
-import { rollTraits } from "./roll.js"; //doesnt exist yet
-
-const rarityWeights = {
-	limited: 1,
-  unusual: 5,
-  rare: 15,
-  uncommon: 30,
-  common: 50,
-	charmed: 75
-};
+/*import { shell } from "./spriteHandlers/shell.js";
+import { leg, hindLegFiles } from "./spriteHandlers/leg.js";
+import { neck } from "./spriteHandlers/neck.js";
+import { cheek } from "./spriteHandlers/cheek.js";
+import { nose } from "./spriteHandlers/nose.js";
+import { eye } from "./spriteHandlers/eye.js";
+import { earhorn } from "./spriteHandlers/earhorn.js";
+import { eyebrow } from "./spriteHandlers/eyebrow.js";
+import { tail } from "./spriteHandlers/tail.js";
+import { colors, secondaryColor, primaryColor, eyeColor } from "./spriteHandlers/color.js";
+import { primaryMarks } from "./spriteHandlers/primaryMarks.js";
+import { secondaryMarks } from "./spriteHandlers/secondaryMarks.js";
+import { tertiary } from "./spriteHandlers/tertiary.js";
+import { spriteLayer } from "./spriteHandlers/layer.js"; */
+import { rollLootbox, buildDropPost } from "./roll.js";
 
 // tab button functionality 
 function showTab(event, tabName) {
@@ -45,4 +36,31 @@ function showTab(event, tabName) {
 }
 window.showTab = showTab;
 
-export { rarityWeights, shell, leg, neck, cheek, nose, eye, earhorn, eyebrow, tail, hindLegFiles, colors, primaryMarks, secondaryMarks, tertiary, secondaryColor, primaryColor, eyeColor, spriteLayer, rollTraits };
+// copy bbcode to clipboard buttons function
+function copyText(elementId) {
+  var postText = document.getElementById(elementId);
+  // Select the text field
+  postText.select();
+  postText.setSelectionRange(0, 99999); 
+   // Copy the text inside the text field
+  navigator.clipboard.writeText(postText.value);
+  // Alert the copied text
+  alert("Copied the text: " + postText.value);
+} 
+window.copyText = copyText;
+
+document.getElementById("dropRoller").addEventListener("click", function() { // generate drop results + build bbcode
+
+    const chestType = document.querySelector(
+        'input[name="chestType"]:checked'
+    )?.value;
+
+    if (!chestType) return;
+
+    const results = rollLootbox(chestType);
+
+    document.getElementById("dropPostBBCode").value =
+        buildDropPost(results);
+});
+
+//export {shell, leg, neck, cheek, nose, eye, earhorn, eyebrow, tail, hindLegFiles, colors, primaryMarks, secondaryMarks, tertiary, secondaryColor, primaryColor, eyeColor, spriteLayer, rollLootbox };

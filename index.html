@@ -26,32 +26,226 @@
 
   </header>
 
-  <section id="preview" class="tabContent">
-      <h2>Trait Previewer</h2>
-      <div>build-a-wyrm :D</div>
+  <!--TRAITS PREVIEWER / "SCRYING" here-->
+  <section id="preview" class="tabContent active">
+    <h2>Trait Previewer</h2>
+    <div>build-a-wyrm :D</div>
   </section>
 
-    <section id="dressup" class="tabContent">
-      <h2>Dressup</h2>
-      <div>glow up</div>
+  <!--self-serve dressups here-->
+  <section id="dressup" class="tabContent">
+    <h2>Dressup</h2>
+    <div>glow up</div>
   </section>
 
+  <!--morphing here-->
   <section id="morpher" class="tabContent">
-      <h2>Morphing Pot</h2>
-      <div>Morpher interface goes here</div>
+    <h2>Morphing Pot</h2>
+    <div>Morpher interface goes here</div>
+    <div><textarea id="morphPostBBCode" readonly></textarea><br><button id="copyPost" onclick="copyText('morphPostBBCode')">Copy BBCode</button></div>
   </section>
 
+  <!--mimic looting here-->
   <section id="dropper" class="tabContent">
-      <h2>Loot Dropper</h2>
-      <div>Username: <input id="UsernameInput"> UserID: <input id="UserIDInput"></div>
-      <div><input type="checkbox" id="dropStandardCheck"> standard: <select id="dropStandardSelect"><option value="iron">iron</option><option value="gold">gold</option><option value="prismatic">prismatic</option></select></div>
-      <div><input type="checkbox" id="dropFestivalsCheck"> festivals: <select id="dropFestivalsSelect"><option value="spooky">spooky</option><option value="gifted">gifted</option><option value="lovely">lovely</option><option value="reborn">reborn</option><option value="silly">silly</option></select></div>
-      <div><input type="checkbox" id="dropSeasonalCheck"> seasonal: <select id="dropSeasonalSelect"><option value="winter">winter</option><option value="spring">spring</option><option value="summer">summer</option><option value="fall">fall</option></select></div>
-      <div><button id="dropRoller" style="background:#8B5CF6;color:#fff;font-weight:bold">ROLL!!!</button></div>
-      <div>Dropper interface goes here</div>
+    <h2>Loot Dropper</h2>
+    <div>Username: <input id="UsernameInput"> UserID: <input id="UserIDInput"></div>
+    <div><input type="radio" name="chestType" value="iron"> Iron</div>
+    <div><input type="radio" name="chestType" value="gold"> Gold</div>
+    <div><input type="radio" name="chestType" value="prism"> Prismatic</div>
+    <div><input type="radio" name="chestType" value="spooky"> Spooky</div>
+    <!--new chest types here-->
+   <div>
+    <button id="dropRoller" style="background:#8B5CF6;color:#fff;font-weight:bold">
+        ROLL!!!
+    </button>
+    </div>
+    <div>rollpreview</div>
+    <div>
+    <textarea id="dropPostBBCode" readonly></textarea>
+    <br>
+    <button id="copyPost" onclick="copyText('dropPostBBCode')">
+        Copy BBCode
+    </button>
+    </div>
   </section>
 
+  <section id="dungeon" class="tabContent">
+    <h2>Dungeoneering</h2>
+    <div>Dungeoneering interface goes here</div>
+  </section>
 
 
 
 </body>
+ 
+
+
+  <!--<style>
+    body {
+      margin: 24px;
+      color: #222;
+      font-family: sans-serif;
+      text-align: center;
+    }
+
+    button {
+      padding: 8px 16px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    #stage {
+      position: relative;
+      width: min(600px, 90vw);
+      aspect-ratio: 2 / 1;
+      margin: 20px auto;
+      background: #f5f5f5;
+      border: 1px solid #ddd;
+    }
+
+    #stage img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      image-rendering: pixelated;
+    }
+
+    #traits {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 4px 16px;
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: left;
+    }
+
+    #error {
+      color: #b00020;
+      white-space: pre-wrap;
+    }
+  </style>
+</head>
+<body>
+  <h1>Wyrmorph Tools</h1>
+  <button id="rollButton" type="button">Roll traits</button>
+  <p id="error" role="alert"></p>
+  <div id="stage" aria-label="Layered creature preview"></div>
+  <div id="traits"></div>
+
+  <script type="module">
+    import { rollTraits } from "./roll.js";
+    import { hindLegFiles } from "./spriteHandlers/leg.js";
+    import { spriteLayer } from "./spriteHandlers/layer.js";
+
+    const stage = document.querySelector("#stage");
+    const traitsList = document.querySelector("#traits");
+    const error = document.querySelector("#error");
+
+    function assetUrl(file) {
+      const normalizedFile = file
+        .replace(/^genes\/earhorns\//, "genes/earhorn/")
+        .replace(/^genes\/eyes\//, "genes/eye/")
+        .replace(/^genes\/marks\//, "genes/mark/");
+      return `species/wyrm/${normalizedFile}`;
+    }
+
+    function traitFiles(rolled) {
+      const sprites = [];
+      const addFiles = trait => {
+        for (const src of trait?.files ?? []) {
+          sprites.push({ src, layer: spriteLayer(src) });
+        }
+      };
+
+      for (const name of ["leg", "shell", "neck", "cheek", "nose", "eye", "earhorn", "eyebrow", "tail"]) {
+        addFiles(rolled[name]);
+      }
+
+      if (rolled.leg.hindleg) {
+        for (const src of hindLegFiles) {
+          sprites.push({ src, layer: spriteLayer(src) });
+        }
+      }
+
+      const activeParts = new Set([
+        rolled.shell.name,
+        rolled.neck.name,
+        rolled.cheek.name,
+        rolled.nose.name,
+        rolled.eye.name,
+        rolled.earhorn.name,
+        "earhorns",
+        rolled.eyebrow.name,
+        rolled.leg.name,
+        rolled.tail.name
+      ]);
+      activeParts.add("nose");
+      if (rolled.nose.name === "whisker") activeParts.add("whiskers");
+
+      for (const src of rolled.primaryMark.files) {
+        const filename = src.split("/").pop().toLowerCase();
+        const traitName = filename.replace(/^primary_/, "").split("_")[0];
+        if (activeParts.has(traitName)) {
+          sprites.push({ src, layer: spriteLayer(src) });
+        }
+      }
+
+      for (const src of rolled.secondaryMark.files) {
+        const filename = src.split("/").pop().toLowerCase();
+        const belongsToPart = [rolled.leg.name, rolled.neck.name, rolled.cheek.name, rolled.tail.name]
+          .some(name => filename.startsWith(`secondary_${name}_`)
+            || filename.startsWith(`secondary_l_${name}_`)
+            || filename.startsWith(`secondary_r_${name}_`));
+        const isHindLegMark = rolled.leg.hindleg
+          && filename.startsWith("secondary_legs_")
+          && filename.includes("_hind_");
+        if (belongsToPart || isHindLegMark) {
+          sprites.push({ src, layer: spriteLayer(src) });
+        }
+      }
+
+      addFiles(rolled.tertiary);
+      sprites.push({
+        src: "genes/watermark.webp",
+        layer: spriteLayer("genes/watermark.webp")
+      });
+
+      return [...new Map(sprites.map(sprite => [sprite.src, sprite])).values()]
+        .sort((a, b) => a.layer - b.layer);
+    }
+
+    function showTraits(rolled) {
+      traitsList.replaceChildren();
+      for (const [name, trait] of Object.entries(rolled)) {
+        const row = document.createElement("div");
+        row.textContent = `${name}: ${trait.name}`;
+        traitsList.append(row);
+      }
+    }
+
+    function showSprites(sprites) {
+      stage.replaceChildren();
+
+      for (const sprite of sprites) {
+        const image = document.createElement("img");
+        image.src = assetUrl(sprite.src);
+        image.alt = "";
+        image.style.zIndex = sprite.layer;
+        image.addEventListener("error", () => {
+          error.textContent = `Could not load ${assetUrl(sprite.src)}`;
+        });
+        stage.append(image);
+      }
+    }
+
+    document.querySelector("#rollButton").addEventListener("click", () => {
+      error.textContent = "";
+      const rolled = rollTraits();
+      showTraits(rolled);
+      showSprites(traitFiles(rolled));
+    });
+  </script>
+</body>
+</html>-->
