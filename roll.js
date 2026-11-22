@@ -221,7 +221,7 @@ const egg = [ //new eggs go here
         ]
       }
     }
-  const prismTable = { //prismatic table
+  const prismaticTable = { //prismatic table
       egg: ["pearlegg"],
       mutagem: [
         { name: "primaswirl", weight: 2 },
@@ -303,7 +303,7 @@ const egg = [ //new eggs go here
 const lootTables = { //master
     iron: ironTable,
     gold: goldTable,
-    prism: prismTable,
+    prismatic: prismaticTable,
     spooky: spookyTable
     //NEW CHEST TYPES GO HERE
 };
@@ -343,7 +343,7 @@ export function rollLootbox() { //rolling the entire mimic
 
     for (let i = 0; i < gemsRolled; i++) {
 
-        const item = chooseRandom(lootTables[chestType].mutagem);
+        const item = chooseRandom(lootTables[chestType].mutagem).name;
 
         mutagemRolled[item] = (mutagemRolled[item] || 0) + 1;
     }
@@ -355,21 +355,68 @@ export function rollLootbox() { //rolling the entire mimic
     };
 }
 
-export function buildDropPost(results) {
+const baseUrl = "https://raw.githubusercontent.com/redvoidlilly/wyrmorph/refs/heads/main";
 
-    const baseUrl = "https://raw.githubusercontent.com/redvoidlilly/wyrmorph/refs/heads/main";
+export function buildCSDropPost(results) { //bbcode generator for CS format
 
-    let dropPostBBCode = "";
+  const username = document.getElementById("UsernameInput").value;
+  const userID = document.getElementById("UserIDInput").value;
+  const chestType = document.querySelector( //pull checked chest type
+      'input[name="chestType"]:checked'
+  )?.value;
 
-    if (results.pearlegg > 0) {
-        dropPostBBCode += "[img]" + baseUrl + "/items/pearlegg.png[/img]";
-        dropPostBBCode += "[b]Pearleggs[/b]=x" + results.pearlegg;
-    }
+  let dropPostBBCode = `[quote][center][img]${baseUrl}/items/catalystcoin.gif[/img][size=120][b][u]Aquired Mimic Loot! ٩(^ᗜ^ )و[/u][/b][/size][img]${baseUrl}/items/catalystcoin.gif[/img]
+
+  [b]Owner:[/b] ${username} ✦ ${userID}
+
+  ⊰═══꩜═══꩜═══꩜═══꩜═══꩜═══꩜═══꩜═══꩜═══⊱
+  [img]${baseUrl}/mimics/${chestType}.png[/img]
+  `;
+
+  if (results.pearlegg > 0) {
+      dropPostBBCode += `︱[img]${baseUrl}/items/pearlegg.png[/img][b]Pearleggs[/b]=x${results.pearlegg}︱`;
+  }
+  if (results.catalystcoin > 0) {
+      dropPostBBCode += `︱[img]${baseUrl}/items/catalystcoin.png[/img][b]Catalyst Coins[/b]=x${results.catalystcoin}︱
+      `;
+  }
+  if (results.mutagems) {
+      for (const [gem, count] of Object.entries(results.mutagems)) {
+          dropPostBBCode += `︱[img]${baseUrl}/items/mutagems/${gem}.png[/img][b]${gem}[/b]=x${count}︱`;
+      }
+  }
+  dropPostBBCode += `
+  ⊰═══꩜═══꩜═══꩜═══꩜═══꩜═══꩜═══꩜═══⊱[/center][/quote]`;
+
+  return dropPostBBCode;
+}
+
+export function buildFRDropPost(results) {
+
+    //pastehere
 
     return dropPostBBCode;
 }
 
+export function displayDropPreview(results) { //display drop preview in html
 
+    const preview = document.getElementById("dropPreview");
+
+    preview.innerHTML = "";
+
+    if (results.pearlegg > 0) {
+        preview.innerHTML += `<div><img src="${baseUrl}/items/pearlegg.png">Pearlegg x${results.pearlegg}</div>`;
+    }
+
+    if (results.catalystcoin > 0) {
+        preview.innerHTML += `<div><img src="${baseUrl}/items/catalystcoin.png">Catalystcoin x${results.catalystcoin}</div>`;
+    }
+
+    for (const [gem, count] of Object.entries(results.mutagems)) {
+        preview.innerHTML += `
+          <div><img src="${baseUrl}/items/mutagems/${gem}.png">${gem} x${count}</div>`;
+    }
+}
 
 
 

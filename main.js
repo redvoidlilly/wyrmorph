@@ -12,7 +12,7 @@ import { primaryMarks } from "./spriteHandlers/primaryMarks.js";
 import { secondaryMarks } from "./spriteHandlers/secondaryMarks.js";
 import { tertiary } from "./spriteHandlers/tertiary.js";
 import { spriteLayer } from "./spriteHandlers/layer.js"; */
-import { rollLootbox, buildDropPost } from "./roll.js";
+import { rollLootbox, buildCSDropPost, buildFRDropPost, displayDropPreview } from "./roll.js";
 
 // tab button functionality 
 function showTab(event, tabName) {
@@ -49,7 +49,7 @@ function copyText(elementId) {
 } 
 window.copyText = copyText;
 
-document.getElementById("dropRoller").addEventListener("click", function() { // generate drop results + build bbcode
+document.getElementById("CSdropRoller").addEventListener("click", function() { // generate drop results + build bbcode
 
     const chestType = document.querySelector(
         'input[name="chestType"]:checked'
@@ -58,9 +58,25 @@ document.getElementById("dropRoller").addEventListener("click", function() { // 
     if (!chestType) return;
 
     const results = rollLootbox(chestType);
+    displayDropPreview(results);
 
     document.getElementById("dropPostBBCode").value =
-        buildDropPost(results);
+        buildCSDropPost(results);
+});
+
+document.getElementById("FRdropRoller").addEventListener("click", function() { // same as above but for FR bbcode
+
+    const chestType = document.querySelector(
+        'input[name="chestType"]:checked'
+    )?.value;
+
+    if (!chestType) return;
+
+    const results = rollLootbox(chestType);
+    displayDropPreview(results);
+
+    document.getElementById("dropPostBBCode").value =
+        buildFRDropPost(results);
 });
 
 //export {shell, leg, neck, cheek, nose, eye, earhorn, eyebrow, tail, hindLegFiles, colors, primaryMarks, secondaryMarks, tertiary, secondaryColor, primaryColor, eyeColor, spriteLayer, rollLootbox };
