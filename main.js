@@ -12,7 +12,7 @@ import { primaryMarks } from "./spriteHandlers/primaryMarks.js";
 import { secondaryMarks } from "./spriteHandlers/secondaryMarks.js";
 import { tertiary } from "./spriteHandlers/tertiary.js";
 import { spriteLayer } from "./spriteHandlers/layer.js";
-import { rollLootbox, buildCSDropPost, buildFRDropPost, displayDropPreview, rollInfused } from "./roll.js";
+import { rollLootbox, buildCSDropPost, buildFRDropPost, displayDropPreview, rollInfused, rollSelectedTraits, rollMarks } from "./roll.js";
 
 // tab button functionality 
 function showTab(event, tabName) {
@@ -79,28 +79,86 @@ document.getElementById("FRdropRoller").addEventListener("click", function() { /
         buildFRDropPost(results);
 });
 
-function getTrait(traitList, name) {
-  for (let i = 0; i < traitList.length; i++) {
-    if (traitList[i].name === name) {
-      return traitList[i];
+const basicTraits = {
+  shell: "stars",
+  leg: "six",
+  neck: "tufty",
+  cheek: "tuft",
+  nose: "basic",
+  eye: "wide",
+  earhorn: "pointy",
+  eyebrow: "circle",
+  tail: "soft",
+  tertiary: "none",
+  primaryMark: "none",
+  secondaryMark: "none"
+};
+const defaultRoll = rollSelectedTraits(basicTraits);
+
+const previewTraitLists = {
+  shell,
+  leg,
+  neck,
+  cheek,
+  nose,
+  eye,
+  earhorn,
+  eyebrow,
+  tail,
+  tertiary,
+  primaryMark: primaryMarks,
+  secondaryMark: secondaryMarks
+};
+
+const previewTraitLabels = {
+  shell: "Shell",
+  leg: "Legs",
+  neck: "Neck",
+  cheek: "Cheek",
+  nose: "Nose",
+  eye: "Eyes",
+  earhorn: "Earhorns",
+  eyebrow: "Eyebrows",
+  tail: "Tail",
+  tertiary: "Tertiary",
+  primaryMark: "Primary Mark",
+  secondaryMark: "Secondary Mark"
+};
+
+function createPreviewControls() {
+  const controls = document.getElementById("previewControls");
+  const traitNames = Object.keys(previewTraitLists);
+
+  for (let i = 0; i < traitNames.length; i++) {
+    const traitName = traitNames[i];
+    const traitList = previewTraitLists[traitName];
+    const label = document.createElement("label");
+    const select = document.createElement("select");
+
+    label.htmlFor = `preview-${traitName}`;
+    label.textContent = previewTraitLabels[traitName];
+    select.id = `preview-${traitName}`; 
+
+    for (let j = 0; j < traitList.length; j++) {
+      const option = document.createElement("option");
+      option.value = traitList[j].name;
+      option.textContent = traitList[j].name;
+      select.appendChild(option); //automatically generates dropdowns options for each trait
     }
+
+    select.value = basicTraits[traitName];
+    select.addEventListener("change", function() { // updates preview when dropdown option selected
+      basicTraits[traitName] = select.value;
+      const selectedTraits = rollSelectedTraits(basicTraits);
+      renderCreature(selectedTraits, document.getElementById("previewRenderer"));
+    }); 
+
+    label.appendChild(select);
+    controls.appendChild(label);
   }
 }
 
-const defaultRoll = { //basic wyrm
-  shell: getTrait(shell, "stars"),
-  leg: getTrait(leg, "six"),
-  neck: getTrait(neck, "tufty"),
-  cheek: getTrait(cheek, "tuft"),
-  nose: getTrait(nose, "basic"),
-  eye: getTrait(eye, "wide"),
-  earhorn: getTrait(earhorn, "pointy"),
-  eyebrow: getTrait(eyebrow, "circle"),
-  tail: getTrait(tail, "soft"),
-  tertiary: getTrait(tertiary, "none")
-};
-
-function renderCreature(fullRoll, renderer) { //render the creature on specified renderer
+function renderCreature(Roll, renderer) { //render the creature on specified renderer
   const sprites = [];
 
   const addTraitFiles = (trait) => {
@@ -116,18 +174,20 @@ function renderCreature(fullRoll, renderer) { //render the creature on specified
     }
   };
 
-  addTraitFiles(fullRoll.shell); // Main trait groups
-  addTraitFiles(fullRoll.leg);
-  addTraitFiles(fullRoll.neck);
-  addTraitFiles(fullRoll.cheek);
-  addTraitFiles(fullRoll.nose);
-  addTraitFiles(fullRoll.eye);
-  addTraitFiles(fullRoll.earhorn);
-  addTraitFiles(fullRoll.eyebrow);
-  addTraitFiles(fullRoll.tail);
-  addTraitFiles(fullRoll.tertiary);
+  addTraitFiles(Roll.shell); // Main trait groups
+  addTraitFiles(Roll.leg);
+  addTraitFiles(Roll.neck);
+  addTraitFiles(Roll.cheek);
+  addTraitFiles(Roll.nose);
+  addTraitFiles(Roll.eye);
+  addTraitFiles(Roll.earhorn);
+  addTraitFiles(Roll.eyebrow);
+  addTraitFiles(Roll.tail);
+  addTraitFiles(Roll.tertiary);
+  addTraitFiles({ files: rollMarks(Roll.primaryMark, Roll) });
+  addTraitFiles({ files: rollMarks(Roll.secondaryMark, Roll) });
 
-  if (fullRoll.leg.hindleg) { // hindlegs for certain traits
+  if (Roll.leg.hindleg) { // hindlegs for certain traits
     addTraitFiles({ files: hindLegFiles });
   }
 
@@ -152,4 +212,5 @@ function renderRandomCreature() { //for random button
 renderCreature(defaultRoll, document.getElementById("previewRenderer"));
 renderCreature(defaultRoll, document.getElementById("dressupRenderer"));
 renderCreature(defaultRoll, document.getElementById("morphRenderer"));
+createPreviewControls();
 document.getElementById("rollRandomButton")?.addEventListener("click", renderRandomCreature);

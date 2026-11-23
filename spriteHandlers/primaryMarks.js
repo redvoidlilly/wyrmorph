@@ -1,5 +1,10 @@
 export const primaryMarks = [
   {
+    name: "none",
+    tags: ["common"],
+    files: []
+  },
+  {
     name: "core",
     tags: ["common"],
     brightness: "dark",

@@ -30,15 +30,7 @@
 <section id="preview" class="tabContent active"> <!--TRAITS PREVIEWER / "SCRYING" here-->
     <h2>Trait Previewer</h2>
     <div id="previewRenderer"></div>
-    <label for="eye">Eyes</label>
-    <select name="eye" id="eye">
-      <option value="wide">Wide</option>
-      <option value="brightwide">BrightWide</option>
-      <option value="darkwide">DarkWide</option>
-      <option value="four">Four</option>
-      <option value="googly">Googly</option>
-      <option value="grump">Grump</option>
-</select>
+    <div id="previewControls"></div>
 
 </section>
 
@@ -198,7 +190,7 @@
         rolled.tail.name
       ]);
       activeParts.add("nose");
-      if (rolled.nose.name === "whisker") activeParts.add("whiskers");
+      if (rolled.nose.name === "whiskers") activeParts.add("whiskers");
 
       for (const src of rolled.primaryMark.files) {
         const filename = src.split("/").pop().toLowerCase();

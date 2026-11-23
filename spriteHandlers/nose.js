@@ -8,10 +8,10 @@ export const nose = [
     ]
   },
   {
-    name: "whisker",
+    name: "whiskers",
     tags: ["common"],
     files: [
-      "species/wyrm/genes/nose/nose_line_whisker.webp"
+      "species/wyrm/genes/nose/nose_line_whiskers.webp"
     ]
   },
   {

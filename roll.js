@@ -418,10 +418,7 @@ export function displayDropPreview(results) { //display drop preview in html
     }
 }
 
-
-
-
-export function rollInfused() {
+export function rollInfused() { //fully randomized roll
   return {
     shell: chooseRandom(shell),
     leg: chooseRandom(leg),
@@ -438,5 +435,128 @@ export function rollInfused() {
     primaryMark: chooseRandom(primaryMarks),
     secondaryMark: chooseRandom(secondaryMarks),
     tertiary: chooseRandom(tertiary)
+  };
+}
+
+function getTrait(traitList, name) { //trait names -> object
+  for (let i = 0; i < traitList.length; i++) {
+    if (traitList[i].name === name) {
+      return traitList[i];
+    }
+  }
+}
+
+export function rollShell(name) {
+  return getTrait(shell, name);
+}
+
+export function rollLeg(name) {
+  return getTrait(leg, name);
+}
+
+export function rollNeck(name) {
+  return getTrait(neck, name);
+}
+
+export function rollCheek(name) {
+  return getTrait(cheek, name);
+}
+
+export function rollNose(name) {
+  return getTrait(nose, name);
+}
+
+export function rollEye(name) {
+  return getTrait(eye, name);
+}
+
+export function rollEarhorn(name) {
+  return getTrait(earhorn, name);
+}
+
+export function rollEyebrow(name) {
+  return getTrait(eyebrow, name);
+}
+
+export function rollTail(name) {
+  return getTrait(tail, name);
+}
+
+export function rollTertiary(name) {
+  return getTrait(tertiary, name);
+}
+
+export function rollPrimaryMark(name) {
+  return getTrait(primaryMarks, name);
+}
+
+export function rollSecondaryMark(name) {
+  return getTrait(secondaryMarks, name);
+}
+
+export function rollMarks(mark, selectedTraits) {
+  const compatibleFiles = [];
+  const traitNames = [
+    "shell",
+    "leg",
+    "neck",
+    "cheek",
+    "nose",
+    "eye",
+    "earhorn",
+    "eyebrow",
+    "tail",
+    "tertiary"
+  ];
+
+  for (let i = 0; i < mark.files.length; i++) {
+    const fileName = mark.files[i]
+      .split("/")
+      .pop()
+      .toLowerCase()
+      .replace(/\.[^.]+$/, "");
+    const fileTokens = fileName.split("_");
+
+    for (let j = 0; j < traitNames.length; j++) { //checks if selected trait has available marking file 
+      const selectedTrait = selectedTraits[traitNames[j]];
+      if (!selectedTrait) continue; 
+
+      const selectedName = selectedTrait.name.toLowerCase();
+      const matchingNames = [selectedName];
+
+      let isCompatible = fileTokens.includes("hind")
+        && selectedTraits.leg
+        && selectedTraits.leg.hindleg;
+      for (let k = 0; k < matchingNames.length; k++) { //namebased matchfinder
+        if (fileTokens.includes(matchingNames[k])) { 
+          isCompatible = true; 
+          break;
+        }
+      }
+
+      if (isCompatible) {
+        compatibleFiles.push(mark.files[i]);
+        break;
+      }
+    }
+  }
+
+  return compatibleFiles;
+}
+
+export function rollSelectedTraits(names) {
+  return {
+    shell: rollShell(names.shell),
+    leg: rollLeg(names.leg),
+    neck: rollNeck(names.neck),
+    cheek: rollCheek(names.cheek),
+    nose: rollNose(names.nose),
+    eye: rollEye(names.eye),
+    earhorn: rollEarhorn(names.earhorn),
+    eyebrow: rollEyebrow(names.eyebrow),
+    tail: rollTail(names.tail),
+    tertiary: rollTertiary(names.tertiary),
+    primaryMark: rollPrimaryMark(names.primaryMark),
+    secondaryMark: rollSecondaryMark(names.secondaryMark)
   };
 }
