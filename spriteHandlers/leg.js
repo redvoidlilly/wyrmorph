@@ -15,9 +15,9 @@ export const leg = [
     hindleg: true,
     tags: ["halloween", "bug", "layered"],
     files: [
-      "species/wyrm/genes/legs/legs_bot_color_spider.webp",
-      "species/wyrm/genes/legs/legs_bot_line_spider.webp",
-      "species/wyrm/genes/legs/legs_bot_shade_spider.webp",
+      "species/wyrm/genes/legs/legs_color_spider.webp",
+      "species/wyrm/genes/legs/legs_line_spider.webp",
+      "species/wyrm/genes/legs/legs_shade_spider.webp",
       "species/wyrm/genes/legs/legs_top_color_spider.webp",
       "species/wyrm/genes/legs/legs_top_line_spider.webp",
       "species/wyrm/genes/legs/legs_top_shade_spider.webp"
@@ -28,9 +28,9 @@ export const leg = [
     tags: ["unusual", "dragon", "layered"],
     hindleg: true,
     files: [
-      "species/wyrm/genes/legs/legs_bot_color_wyvern.webp",
-      "species/wyrm/genes/legs/legs_bot_line_wyvern.webp",
-      "species/wyrm/genes/legs/legs_bot_shade_wyvern.webp",
+      "species/wyrm/genes/legs/legs_color_wyvern.webp",
+      "species/wyrm/genes/legs/legs_line_wyvern.webp",
+      "species/wyrm/genes/legs/legs_shade_wyvern.webp",
       "species/wyrm/genes/legs/legs_top_color_wyvern.webp",
       "species/wyrm/genes/legs/legs_top_line_wyvern.webp"
     ]
@@ -58,10 +58,7 @@ export const leg = [
 ];
 
 export const hindLegFiles = [
-  "species/wyrm/genes/legs/legs_bot_color_hind.webp",
-  "species/wyrm/genes/legs/legs_bot_line_hind.webp",
-  "species/wyrm/genes/legs/legs_bot_shade_hind.webp",
-  "species/wyrm/genes/legs/legs_top_color_hind.webp",
-  "species/wyrm/genes/legs/legs_top_line_hind.webp",
-  "species/wyrm/genes/legs/legs_top_shade_hind.webp"
+  "species/wyrm/genes/legs/legs_color_hind.webp",
+  "species/wyrm/genes/legs/legs_line_hind.webp",
+  "species/wyrm/genes/legs/legs_shade_hind.webp"
 ];

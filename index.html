@@ -26,27 +26,39 @@
 
   </header>
 
-  <!--TRAITS PREVIEWER / "SCRYING" here-->
-  <section id="preview" class="tabContent active">
-    <h2>Trait Previewer</h2>
-    <div>build-a-wyrm :D</div>
-  </section>
 
-  <!--self-serve dressups here-->
-  <section id="dressup" class="tabContent">
+<section id="preview" class="tabContent active"> <!--TRAITS PREVIEWER / "SCRYING" here-->
+    <h2>Trait Previewer</h2>
+    <div id="previewRenderer"></div>
+    <label for="eye">Eyes</label>
+    <select name="eye" id="eye">
+      <option value="wide">Wide</option>
+      <option value="brightwide">BrightWide</option>
+      <option value="darkwide">DarkWide</option>
+      <option value="four">Four</option>
+      <option value="googly">Googly</option>
+      <option value="grump">Grump</option>
+</select>
+
+</section>
+
+
+<section id="dressup" class="tabContent"> <!--self-serve dressups here-->
     <h2>Dressup</h2>
     <div>glow up</div>
-  </section>
+    <div id="dressupRenderer"></div>
+</section>
 
-  <!--morphing here-->
-  <section id="morpher" class="tabContent">
+
+<section id="morpher" class="tabContent"> <!--morphing here-->
     <h2>Morphing Pot</h2>
-    <div>Morpher interface goes here</div>
+    <button type="button" id="rollRandomButton">Roll Random Creature</button>
+    <div id="morphRenderer"></div>
     <div><textarea id="morphPostBBCode" readonly></textarea><br><button id="copyPost" onclick="copyText('morphPostBBCode')">Copy BBCode</button></div>
-  </section>
+</section>
 
-  <!--mimic looting here-->
-  <section id="dropper" class="tabContent">
+
+<section id="dropper" class="tabContent"> <!--mimic looting here-->
     <h2>Loot Dropper</h2>
     <div>Username: <input id="UsernameInput"> UserID: <input id="UserIDInput"></div>
     <div><input type="radio" name="chestType" value="iron"> Iron</div>
@@ -71,12 +83,12 @@
         Copy BBCode
     </button>
     </div>
-  </section>
+</section>
 
-  <section id="dungeon" class="tabContent">
+<section id="dungeon" class="tabContent">
     <h2>Dungeoneering</h2>
     <div>Dungeoneering interface goes here</div>
-  </section>
+</section>
 
 
 
